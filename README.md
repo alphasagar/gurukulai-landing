@@ -1,0 +1,2 @@
+# gurukulai-landing
+Gurukul AI
