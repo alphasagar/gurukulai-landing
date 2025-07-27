@@ -134,42 +134,6 @@
       font-size: 0.9rem;
       color: #777;
     }
-
-    /* Floating sound toggle */
-    .sound-toggle {
-      position: fixed;
-      right: 22px;
-      bottom: 22px;
-      z-index: 100;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.75);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(0,0,0,0.05);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-      cursor: pointer;
-      transition: transform .15s ease, background .2s ease;
-    }
-    .sound-toggle:hover {
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.9);
-    }
-    .sound-toggle svg {
-      width: 24px;
-      height: 24px;
-      fill: var(--brand);
-    }
-
-    .sr-only{
-      position:absolute !important;
-      height:1px; width:1px;
-      overflow:hidden; clip:rect(1px,1px,1px,1px);
-      white-space:nowrap;
-    }
   </style>
 </head>
 <body>
@@ -177,9 +141,6 @@
   <div class="glow"></div>
   <div class="glow"></div>
   <div class="glow"></div>
-
-  <!-- Background music -->
-  <audio id="bg-music" preload="none" loop src="gurukul.mp3"></audio>
 
   <!-- Page content -->
   <div class="container">
@@ -192,70 +153,5 @@
     </div>
     <footer>Coming Soon • © 2025 Gurukul AI</footer>
   </div>
-
-  <!-- Floating Sound On/Off button -->
-  <button id="sound-toggle" class="sound-toggle" aria-pressed="false" aria-label="Toggle background music">
-    <!-- default (off) icon -->
-    <svg id="icon-sound-off" viewBox="0 0 24 24"><path d="M16.5 12l4.5 4.5-1.5 1.5L15 13.5l-4.5 4.5H7v-6H3v-4h4V4.5h3.5L15 9l4.5-4.5 1.5 1.5L16.5 10.5 21 15l-1.5 1.5-3-3-3 3L12 15l3-3-3-3 1.5-1.5 3 3 3-3L21 6l-4.5 4.5z"/></svg>
-    <!-- on icon will be injected dynamically -->
-    <span class="sr-only">Toggle Sound</span>
-  </button>
-
-  <script>
-    (function () {
-      const audio = document.getElementById('bg-music');
-      const btn = document.getElementById('sound-toggle');
-
-      const ICON_ON = `
-        <svg viewBox="0 0 24 24"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM14 3.23v2.06c2.89 1 5 3.77 5 7.71s-2.11 6.71-5 7.71v2.06c4.01-1.1 7-4.87 7-9.77s-2.99-8.67-7-9.77z"/></svg>
-      `;
-      const ICON_OFF = `
-        <svg viewBox="0 0 24 24"><path d="M16.5 12l4.5 4.5-1.5 1.5L15 13.5l-4.5 4.5H7v-6H3v-4h4V4.5h3.5L15 9l4.5-4.5 1.5 1.5L16.5 10.5 21 15l-1.5 1.5-3-3-3 3L12 15l3-3-3-3 1.5-1.5 3 3 3-3L21 6l-4.5 4.5z"/></svg>
-      `;
-
-      let wantSound = localStorage.getItem('gurukul_sound') === 'on';
-
-      const setIcon = () => {
-        btn.innerHTML = wantSound ? ICON_ON : ICON_OFF;
-        btn.setAttribute('aria-pressed', wantSound ? 'true' : 'false');
-      };
-
-      const tryPlay = async () => {
-        try {
-          await audio.play();
-        } catch (e) {
-          // ignored: browser blocked until a user gesture
-        }
-      };
-
-      const initAfterFirstGesture = () => {
-        document.removeEventListener('click', initAfterFirstGesture);
-        document.removeEventListener('touchstart', initAfterFirstGesture);
-        if (wantSound) {
-          audio.muted = false;
-          tryPlay();
-        }
-      };
-
-      btn.addEventListener('click', async () => {
-        wantSound = !wantSound;
-        localStorage.setItem('gurukul_sound', wantSound ? 'on' : 'off');
-        setIcon();
-
-        if (wantSound) {
-          audio.muted = false;
-          await tryPlay();
-        } else {
-          audio.pause();
-        }
-      });
-
-      // Prepare initial UI
-      setIcon();
-      audio.muted = true; // safe default
-      document.addEventListener('click', initAfterFirstGesture, { once: true });
-      document.addEventListener('touchstart', initAfterFirstGesture, { once: true });
-    })();
-  </script>
 </body>
 </html>
