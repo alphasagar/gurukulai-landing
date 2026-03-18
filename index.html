@@ -417,7 +417,7 @@
     .hero-blob-2 { width: 380px; height: 380px; background: #f28b82; bottom: -80px; left: -80px; }
     .hero-inner {
       max-width: 1100px; margin: 0 auto; padding: 0 1.25rem;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-start;
     }
     .hero-tag { margin-bottom: 20px; }
     .hero h1 {
@@ -660,9 +660,74 @@
     .footer-bottom p { color: var(--muted); font-size: 13px; }
 
     /* ─── Responsive ─────────────────────────────────── */
+    /* ─── Topper Answer Sheet ─────────────────────────── */
+    .topper-sheet-wrap {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .topper-sheet-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: linear-gradient(135deg, rgba(251,191,119,0.15), rgba(242,139,130,0.1));
+      border-bottom: 1px solid var(--border);
+    }
+    .topper-sheet-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .topper-sheet-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: linear-gradient(135deg, #fbbf77, #f28b82);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .topper-sheet-img {
+      width: 100%;
+      display: block;
+      max-height: 280px;
+      object-fit: cover;
+      object-position: top;
+    }
+    .topper-sheet-caption {
+      padding: 8px 14px;
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-top: 1px solid var(--border);
+    }
+    .topper-sheet-caption strong {
+      color: var(--text);
+    }
+    .hero-visual-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
     @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
-      .hero-visual { display: none; }
+      .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+      .hero-visual { display: block; }
+      .hero-visual .floating-badge { display: none; }
+      .topper-sheet-img { max-height: 220px; }
       .features-grid, .pricing-grid, .testimonials-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
       .steps::before { display: none; }
@@ -752,58 +817,77 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="mock-card" style="position:relative;">
-        <div class="mock-card-header">
-          <div class="mock-dot" style="background:#ef4444;"></div>
-          <div class="mock-dot" style="background:#f59e0b;"></div>
-          <div class="mock-dot" style="background:#10b981;"></div>
-          <div class="mock-label" style="margin-left:8px;">AI Evaluation Result</div>
-        </div>
-        <p class="mock-question">Q: "Discuss the role of civil society in strengthening Indian democracy." <span style="color:#6c63ff;">(15 marks)</span></p>
-        <div style="display:flex;gap:16px;margin-bottom:16px;">
-          <div style="flex:1;">
-            <div class="mock-score-row">
-              <span class="mock-score-label">Introduction</span>
-              <span class="mock-score-val" style="color:#10b981;">2/3</span>
-            </div>
-            <div class="mock-bar"><div class="mock-bar-fill" style="width:80%;background:#10b981;"></div></div>
+      <div class="hero-visual-stack">
+
+        <!-- Topper Answer Sheet -->
+        <div class="topper-sheet-wrap">
+          <div class="topper-sheet-header">
+            <span class="topper-sheet-label">📄 Handwritten Answer Sheet</span>
+            <span class="topper-sheet-badge">🏆 AIR 1 · 2024</span>
           </div>
-          <div style="flex:1;">
-            <div class="mock-score-row">
-              <span class="mock-score-label">Content</span>
-              <span class="mock-score-val" style="color:#f59e0b;">4/7</span>
-            </div>
-            <div class="mock-bar"><div class="mock-bar-fill" style="width:70%;background:#f59e0b;"></div></div>
+          <img
+            src="shakti-dubey-answer.jpg.jpg"
+            alt="Shakti Dubey AIR 1 UPSC 2024 Handwritten Answer Sheet"
+            class="topper-sheet-img"
+            loading="lazy"
+          />
+          <div class="topper-sheet-caption">
+            <span>✍️</span>
+            <span><strong>Shakti Dubey</strong> · AIR 1, UPSC CSE 2024 · GS Answer Sheet</span>
           </div>
         </div>
-        <div style="display:flex;gap:16px;margin-bottom:16px;">
-          <div style="flex:1;">
-            <div class="mock-score-row">
-              <span class="mock-score-label">Structure</span>
-              <span class="mock-score-val" style="color:#6c63ff;">2/3</span>
-            </div>
-            <div class="mock-bar"><div class="mock-bar-fill" style="width:90%;background:#6c63ff;"></div></div>
+
+        <!-- AI Evaluation Result -->
+        <div class="mock-card" style="position:relative;border-radius:0 0 20px 20px;border-top:none;">
+          <div class="mock-card-header">
+            <div class="mock-label" style="margin-left:8px;">GurukulAI Evaluation</div>
           </div>
-          <div style="flex:1;">
-            <div class="mock-score-row">
-              <span class="mock-score-label">Conclusion</span>
-              <span class="mock-score-val" style="color:#10b981;">1/2</span>
+          <div style="display:flex;gap:16px;margin-bottom:16px;">
+            <div style="flex:1;">
+              <div class="mock-score-row">
+                <span class="mock-score-label">Introduction</span>
+                <span class="mock-score-val" style="color:#10b981;">2/3</span>
+              </div>
+              <div class="mock-bar"><div class="mock-bar-fill" style="width:80%;background:#10b981;"></div></div>
             </div>
-            <div class="mock-bar"><div class="mock-bar-fill" style="width:80%;background:#10b981;"></div></div>
+            <div style="flex:1;">
+              <div class="mock-score-row">
+                <span class="mock-score-label">Content</span>
+                <span class="mock-score-val" style="color:#f59e0b;">4/7</span>
+              </div>
+              <div class="mock-bar"><div class="mock-bar-fill" style="width:70%;background:#f59e0b;"></div></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;margin-bottom:16px;">
+            <div style="flex:1;">
+              <div class="mock-score-row">
+                <span class="mock-score-label">Structure</span>
+                <span class="mock-score-val" style="color:#6c63ff;">2/3</span>
+              </div>
+              <div class="mock-bar"><div class="mock-bar-fill" style="width:90%;background:#6c63ff;"></div></div>
+            </div>
+            <div style="flex:1;">
+              <div class="mock-score-row">
+                <span class="mock-score-label">Conclusion</span>
+                <span class="mock-score-val" style="color:#10b981;">1/2</span>
+              </div>
+              <div class="mock-bar"><div class="mock-bar-fill" style="width:80%;background:#10b981;"></div></div>
+            </div>
+          </div>
+          <div style="font-size:13px;color:var(--muted);font-weight:700;margin-bottom:10px;">Estimated Score: <span style="color:#10b981;font-size:20px;">9/15</span></div>
+          <div>
+            <span class="mock-tag" style="background:rgba(16,185,129,0.15);color:#10b981;">✓ Good flow</span>
+            <span class="mock-tag" style="background:rgba(245,158,11,0.15);color:#f59e0b;">⚠ Add examples</span>
+            <span class="mock-tag" style="background:rgba(108,99,255,0.15);color:#a5a0ff;">💡 Temple relevance</span>
+          </div>
+          <div class="floating-badge floating-badge-1">
+            <span>⚡</span> Evaluated in 48s
+          </div>
+          <div class="floating-badge floating-badge-2">
+            <span>📄</span> Model Answer Ready
           </div>
         </div>
-        <div style="font-size:13px;color:#e8e8f0;font-weight:700;margin-bottom:10px;">Estimated Score: <span style="color:#10b981;font-size:20px;">9/15</span></div>
-        <div>
-          <span class="mock-tag" style="background:rgba(16,185,129,0.15);color:#10b981;">✓ Good flow</span>
-          <span class="mock-tag" style="background:rgba(245,158,11,0.15);color:#f59e0b;">⚠ Add examples</span>
-          <span class="mock-tag" style="background:rgba(108,99,255,0.15);color:#a5a0ff;">💡 RTI Act relevance</span>
-        </div>
-        <div class="floating-badge floating-badge-1">
-          <span>⚡</span> Evaluated in 48s
-        </div>
-        <div class="floating-badge floating-badge-2">
-          <span>📄</span> Model Answer Ready
-        </div>
+
       </div>
     </div>
   </div>
