@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPSC Recommended Books 2024 — Prelims & Mains Booklist | GurukulAI</title>
+  <meta name="description" content="Complete UPSC booklist for Prelims and Mains 2024. Subject-wise recommended books by toppers — History, Polity, Geography, Economy, Ethics, and more. Buy directly on Amazon." />
+  <meta name="keywords" content="UPSC books, UPSC booklist 2024, UPSC Prelims books, UPSC Mains books, Laxmikanth Polity, Spectrum Modern India, UPSC recommended books, best books for UPSC" />
+  <link rel="canonical" href="https://gurukulai.in/books.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- BookList structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "UPSC Recommended Books 2024",
+    "description": "Complete booklist for UPSC Civil Services Examination — Prelims and Mains",
+    "url": "https://gurukulai.in/books.html"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lato', Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Variables — identical to index.html ── */
+    :root {
+      --primary:    #fbbf77;
+      --primary-dk: #f5a020;
+      --accent:     #f28b82;
+      --secondary:  #ffd89c;
+      --bg:         #fff8f1;
+      --surface:    #ffffff;
+      --surface2:   #f5ede4;
+      --text:       #2d2d2d;
+      --muted:      #6b7280;
+      --border:     #e5e7eb;
+      --success:    #a3e635;
+      --amazon-orange: #FF9900;
+      --amazon-dk:     #CC7A00;
+    }
+
+    /* ── Layout ── */
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
+    h1,h2,h3,h4 { font-family: 'PT Serif', Georgia, serif; color: var(--text); line-height: 1.2; }
+
+    /* ── Navbar ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,248,241,0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; max-width: 1100px; margin: 0 auto; padding: 0 1.25rem;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 800; font-size: 18px; color: var(--text); text-decoration: none;
+      font-family: 'PT Serif', Georgia, serif;
+    }
+    .nav-logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, #fbbf77, #f28b82);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 8px rgba(251,191,119,0.35);
+    }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 20px; border-radius: 12px;
+      font-weight: 700; font-size: 14px; text-decoration: none;
+      transition: all 0.2s; cursor: pointer; border: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #fbbf77, #f28b82);
+      color: #fff; box-shadow: 0 4px 20px rgba(251,191,119,0.4);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(251,191,119,0.5); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; }
+    .mobile-menu {
+      display: none; flex-direction: column; gap: 4px;
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+    }
+    .mobile-menu a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 0; border-bottom: 1px solid var(--border); display: block; }
+    .mobile-menu a:last-child { border: none; }
+    .mobile-menu.open { display: flex; }
+
+    /* ── Page Hero ── */
+    .page-hero {
+      background: linear-gradient(160deg, rgba(251,191,119,0.15) 0%, rgba(242,139,130,0.1) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 96px 0 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute; border-radius: 50%;
+      width: 400px; height: 400px;
+      background: #fbbf77; opacity: 0.12;
+      filter: blur(100px);
+      top: -100px; right: -100px;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute; border-radius: 50%;
+      width: 300px; height: 300px;
+      background: #f28b82; opacity: 0.1;
+      filter: blur(80px);
+      bottom: -80px; left: -80px;
+    }
+    .page-hero-inner { position: relative; z-index: 1; }
+    .page-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(251,191,119,0.15); border: 1px solid rgba(251,191,119,0.4);
+      color: var(--primary-dk); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 100px; margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; color: var(--text);
+      margin-bottom: 12px; line-height: 1.2;
+    }
+    .page-hero h1 span {
+      background: linear-gradient(135deg, #fbbf77, #f28b82);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .page-hero p { color: var(--muted); font-size: 1rem; max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+    /* ── Tab Bar ── */
+    .tab-bar-wrap { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 50; }
+    .tab-bar { display: flex; gap: 0; max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
+    .tab-btn {
+      padding: 16px 28px; font-size: 14px; font-weight: 700;
+      color: var(--muted); background: none; border: none; cursor: pointer;
+      border-bottom: 3px solid transparent; transition: all 0.2s;
+      font-family: 'Lato', sans-serif; white-space: nowrap;
+    }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--primary-dk); border-bottom-color: var(--primary); }
+
+    /* ── Affiliate notice ── */
+    .affiliate-notice {
+      background: rgba(251,191,119,0.1); border: 1px solid rgba(251,191,119,0.3);
+      border-radius: 12px; padding: 12px 18px;
+      display: flex; align-items: center; gap: 10px;
+      font-size: 13px; color: var(--muted); margin-bottom: 24px;
+    }
+    .affiliate-notice strong { color: var(--text); }
+
+    /* ── Content Panels ── */
+    .content-panel { padding: 40px 0 64px; }
+    .content-panel.hidden { display: none; }
+
+    /* ── Section heading ── */
+    .section-heading {
+      font-size: 1.15rem; font-weight: 700; color: var(--text);
+      margin-bottom: 16px; margin-top: 36px;
+      display: flex; align-items: center; gap: 8px;
+      padding-bottom: 10px; border-bottom: 2px solid rgba(251,191,119,0.3);
+    }
+    .section-heading:first-child { margin-top: 0; }
+
+    /* ── Subject card ── */
+    .subject-grid { display: grid; gap: 16px; margin-bottom: 8px; }
+    .subject-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .subject-card:hover { border-color: rgba(251,191,119,0.5); box-shadow: 0 4px 20px rgba(251,191,119,0.1); }
+    .subject-card-header {
+      background: linear-gradient(135deg, rgba(251,191,119,0.1), rgba(242,139,130,0.07));
+      border-bottom: 1px solid var(--border);
+      padding: 12px 18px;
+    }
+    .subject-card-header h3 {
+      font-size: 14px; font-weight: 700; color: var(--primary-dk);
+      font-family: 'Lato', sans-serif;
+    }
+    .subject-card-body { padding: 14px 18px; }
+
+    /* ── Book rows ── */
+    .book-row {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 5px 0;
+    }
+    .book-row + .book-row { border-top: 1px solid rgba(229,231,235,0.5); }
+    .book-text {
+      font-size: 13.5px; flex: 1; line-height: 1.5;
+    }
+    .book-text.label {
+      font-size: 12px; font-weight: 700; color: var(--primary-dk);
+      text-transform: uppercase; letter-spacing: 0.06em; padding-top: 8px;
+      border-top: none;
+    }
+    .book-text.note { color: var(--muted); font-size: 13px; padding-left: 8px; }
+    .book-text.bullet { color: var(--text); }
+    .book-text.spacer { padding: 0; height: 4px; display: block; }
+    .buy-btn {
+      flex-shrink: 0;
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 800;
+      text-decoration: none;
+      background: rgba(255,153,0,0.12);
+      color: var(--amazon-dk);
+      border: 1px solid rgba(255,153,0,0.3);
+      transition: background 0.2s, border-color 0.2s;
+      white-space: nowrap;
+      font-family: 'Lato', sans-serif;
+    }
+    .buy-btn:hover { background: rgba(255,153,0,0.22); border-color: rgba(255,153,0,0.6); }
+
+    /* ── Strategy cards ── */
+    .strategy-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 20px 22px;
+    }
+    .strategy-card ol, .strategy-card ul { padding-left: 20px; }
+    .strategy-card li { font-size: 13.5px; color: var(--muted); padding: 4px 0; line-height: 1.6; }
+
+    /* ── CTA strip ── */
+    .cta-strip {
+      background: linear-gradient(135deg, rgba(251,191,119,0.18), rgba(242,139,130,0.12));
+      border-top: 1px solid var(--border);
+      text-align: center; padding: 64px 0;
+    }
+    .cta-strip h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--text); margin-bottom: 12px; }
+    .cta-strip p { color: var(--muted); font-size: 15px; max-width: 480px; margin: 0 auto 28px; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface); border-top: 1px solid var(--border);
+      padding: 48px 0 32px;
+    }
+    .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-brand p { color: var(--muted); font-size: 14px; margin-top: 12px; line-height: 1.6; max-width: 260px; }
+    .footer-col h4 { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .footer-col a { display: block; color: var(--muted); font-size: 14px; text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--text); }
+    .footer-bottom {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      border-top: 1px solid var(--border); padding-top: 24px;
+    }
+    .footer-bottom p { color: var(--muted); font-size: 13px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 600px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .tab-btn { padding: 14px 16px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon"><img src="favicon.png" alt="GurukulAI" width="24" height="24" style="object-fit:contain;display:block;" /></div>
+      GurukulAI
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/books.html" style="color:var(--primary-dk);">📚 Books</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://app.gurukulai.in/login" class="btn btn-primary">Start Free →</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/#features">Features</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/books.html">📚 Books</a>
+    <a href="https://app.gurukulai.in/login" style="color:var(--primary-dk);font-weight:700;">Start Free →</a>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="container">
+      <div class="page-badge">📚 UPSC 2024–25 Edition</div>
+      <h1>Complete UPSC <span>Recommended Booklist</span></h1>
+      <p>Curated subject-wise books for Prelims &amp; Mains — trusted by toppers. Buy on Amazon with one click.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── STICKY TAB BAR ── -->
+<div class="tab-bar-wrap">
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('prelims', this)">📖 Prelims</button>
+    <button class="tab-btn" onclick="switchTab('mains', this)">📝 Mains</button>
+  </div>
+</div>
+
+<!-- ── MAIN CONTENT ── -->
+<main>
+
+<!-- ═════════════════ PRELIMS PANEL ═════════════════ -->
+<div id="panel-prelims" class="content-panel">
+  <div class="container">
+
+    <div class="affiliate-notice">
+      🛒 <span><strong>Affiliate Disclosure:</strong> Buy buttons are Amazon affiliate links. You pay the same price — we earn a small commission that helps keep GurukulAI free.</span>
+    </div>
+
+    <!-- Core Subjects -->
+    <div class="section-heading">📘 Core Subjects &amp; Standard Books</div>
+    <div class="subject-grid">
+
+      <!-- History -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>1. History</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text label">Ancient &amp; Medieval History</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Old NCERTs (Class VI–X, R.S. Sharma, Satish Chandra)</span>
+            <a href="" class="buy-btn" id="buy-ncerts-history" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Tamil Nadu State Board History (Class 11 &amp; 12) — concise &amp; exam-oriented</span>
+            <a href="" class="buy-btn" id="buy-tn-history" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Ancient India by R.S. Sharma</span>
+            <a href="" class="buy-btn" id="buy-rs-sharma" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Medieval India by Satish Chandra (selectively)</span>
+            <a href="" class="buy-btn" id="buy-satish-chandra" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text label" style="margin-top:4px;">Modern History</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• A Brief History of Modern India by Spectrum (Rajiv Ahir) — Bible for Prelims</span>
+            <a href="" class="buy-btn" id="buy-spectrum" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• India's Struggle for Independence by Bipan Chandra (selectively)</span>
+            <a href="" class="buy-btn" id="buy-bipan" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text label" style="margin-top:4px;">Art &amp; Culture</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Nitin Singhania's Indian Art &amp; Culture (Prelims + Mains)</span>
+            <a href="" class="buy-btn" id="buy-singhania" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Fine Arts (Class 11)</span>
+             <a href="" class="buy-btn" id="ncert-fine-arts" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geography -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>2. Geography</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• NCERTs: Class VI–XII (especially Class XI Physical Geography, Class XII India: Physical Environment)</span>
+            <a href="" class="buy-btn" id="ncert-geography" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Certificate Physical &amp; Human Geography by G.C. Leong</span>
+            <a href="" class="buy-btn" id="buy-leong" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Atlas: Orient Black Swan / Oxford Student Atlas</span>
+            <a href="" class="buy-btn" id="buy-atlas" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Polity -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>3. Polity</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Indian Polity by M. Laxmikanth — read cover to cover</span>
+            <a href="" class="buy-btn" id="buy-laxmikanth" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Political Science (Class IX–XII)</span>
+            <a href="" class="buy-btn" id="ncert-polity" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text note">• Bare Act — for quick reference to Constitution articles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Economy -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>4. Economy</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Economics (Class IX–XII) — especially Macroeconomics Class XII</span>
+            <a href="" class="buy-btn" id="ncert-economics" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Indian Economy by Ramesh Singh</span>
+            <a href="" class="buy-btn" id="buy-ramesh-singh" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Indian Economy by Sanjiv Verma (for clarity on basics)</span>
+            <a href="" class="buy-btn" id="buy-sanjiv-verma" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text note">• Economic Survey (latest) — important for Prelims trends</span>
+          </div>
+          <div class="book-row">
+            <span class="book-text note">• Union Budget (latest) — schemes, allocations, policies</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Environment -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>5. Environment &amp; Ecology</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Shankar IAS Environment Book</span>
+            <a href="" class="buy-btn" id="buy-shankar" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Biology (Class XII) — Ecology &amp; Environment chapters</span>
+            <a href="" class="buy-btn" id="ncert-biology" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text note">• Current affairs: Climate Change, COP, Biodiversity conventions</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Science & Technology -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>6. Science &amp; Technology</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Science (Class VI–X) for basics</span>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Biology Class XI–XII (selectively)</span>
+          </div>
+          <div class="book-row"><span class="book-text label">Track Current Developments In:</span></div>
+          <div class="book-row"><span class="book-text note">• Space (ISRO, NASA), Defence technology, IT, AI, Robotics, Biotech</span></div>
+        </div>
+      </div>
+
+      <!-- Current Affairs -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>7. Current Affairs</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text label">Newspapers (daily)</span></div>
+          <div class="book-row"><span class="book-text bullet">• The Hindu or Indian Express</span></div>
+          <div class="book-row"><span class="book-text label">Government Sources</span></div>
+          <div class="book-row"><span class="book-text bullet">• PIB (Press Information Bureau)</span></div>
+          <div class="book-row"><span class="book-text bullet">• PRS India (legislation tracking)</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Yojana &amp; Kurukshetra (selective, important themes)</span>
+            <a href="" class="buy-btn" id="buy-yojana" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSAT -->
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>8. CSAT (Paper-II)</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• Previous Year CSAT Papers — compulsory practice</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT Maths (Class IX &amp; X) for fundamentals</span>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• R.S. Aggarwal's Quantitative Aptitude (if weak in quant)</span>
+            <a href="" class="buy-btn" id="buy-aggarwal" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /subject-grid -->
+
+    <!-- Practice & Strategy -->
+    <div class="section-heading">📑 Practice &amp; Strategy</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Practice Materials</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• Previous Year Question Papers (PYQs) — minimum last 10 years</span></div>
+          <div class="book-row"><span class="book-text bullet">• Test Series — pick one institute and stick to it</span></div>
+          <div class="book-row"><span class="book-text bullet">• Daily MCQs — consistency over volume</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Preparation Strategy</h3></div>
+        <div class="subject-card-body strategy-card" style="background:none;border:none;padding:14px 0;">
+          <ol>
+            <li>Start with NCERTs → move to standard books</li>
+            <li>Make short notes (one page per topic)</li>
+            <li>Revise multiple times (3–4 revisions minimum)</li>
+            <li>Solve PYQs — they reveal UPSC's exact pattern</li>
+            <li>Take mock tests under real exam conditions</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /panel-prelims -->
+
+
+<!-- ═════════════════ MAINS PANEL ═════════════════ -->
+<div id="panel-mains" class="content-panel hidden">
+  <div class="container">
+
+    <div class="affiliate-notice">
+      🛒 <span><strong>Affiliate Disclosure:</strong> Buy buttons are Amazon affiliate links. You pay the same price — we earn a small commission that helps keep GurukulAI free.</span>
+    </div>
+
+    <!-- Essay -->
+    <div class="section-heading">✍️ Essay Paper</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Essay (GS Paper — General Studies)</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text note">No specific book — practice is the only key.</span></div>
+          <div class="book-row"><span class="book-text label">Sources</span></div>
+          <div class="book-row"><span class="book-text bullet">• Toppers essay compilations (available on UPSC forums)</span></div>
+          <div class="book-row"><span class="book-text bullet">• The Hindu &amp; Indian Express editorials — for content &amp; depth</span></div>
+          <div class="book-row"><span class="book-text note">• Practice 1 essay per week — focus on structure, philosophical depth, real-life examples</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GS1 -->
+    <div class="section-heading">📘 GS Paper I — History, Geography &amp; Society</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>History &amp; Culture</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Spectrum's Modern India (for revision)</span>
+            <a href="" class="buy-btn" id="buy-spectrum-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Bipan Chandra — India's Struggle for Independence (selective)</span>
+            <a href="" class="buy-btn" id="buy-bipan-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Nitin Singhania — Indian Art &amp; Culture</span>
+            <a href="" class="buy-btn" id="buy-singhania-mains" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>World History</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• NCERT World History (Class IX–X, selectively)</span>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Norman Lowe — Mastering Modern World History (important events)</span>
+            <a href="" class="buy-btn" id="buy-norman-lowe" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Indian Society</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• NCERT Sociology (Class XI &amp; XII)</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Ram Ahuja — Indian Society (selective chapters)</span>
+            <a href="" class="buy-btn" id="buy-ram-ahuja" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text note">• Current examples from newspapers (important for mains answers)</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Geography</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• G.C. Leong — Certificate Physical &amp; Human Geography</span>
+            <a href="" class="buy-btn" id="buy-leong-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text bullet">• NCERT XI &amp; XII (India &amp; World Geography)</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Oxford / Orient BlackSwan Student Atlas</span>
+            <a href="" class="buy-btn" id="buy-atlas-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text note">• Disaster Management: 2nd ARC Report, NDMA guidelines</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GS2 -->
+    <div class="section-heading">⚖️ GS Paper II — Polity, Governance &amp; IR</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Polity &amp; Constitution</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• M. Laxmikanth — Indian Polity</span>
+            <a href="" class="buy-btn" id="buy-laxmikanth-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• D.D. Basu — Introduction to the Constitution of India</span>
+            <a href="" class="buy-btn" id="buy-dd-basu" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Governance &amp; Social Justice</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• 2nd ARC Reports (especially Governance, Ethics chapters)</span></div>
+          <div class="book-row"><span class="book-text bullet">• India Year Book (welfare schemes reference)</span></div>
+          <div class="book-row"><span class="book-text bullet">• PRS India — bills, policies, acts tracker</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>International Relations</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Pavneet Singh — International Relations</span>
+            <a href="" class="buy-btn" id="buy-pavneet" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text bullet">• The Hindu / Indian Express editorials on IR</span></div>
+          <div class="book-row"><span class="book-text note">• IDSA, ORF websites — research papers (selective)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GS3 -->
+    <div class="section-heading">🌾 GS Paper III — Economy, Environment &amp; Security</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Economy</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Indian Economy by Ramesh Singh</span>
+            <a href="" class="buy-btn" id="buy-ramesh-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Indian Economy by Sanjiv Verma (for concepts)</span>
+            <a href="" class="buy-btn" id="buy-sanjiv-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text note">• Economic Survey (latest) — indispensable</span></div>
+          <div class="book-row"><span class="book-text note">• Union Budget highlights (schemes &amp; allocations)</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Agriculture</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• NCERT Geography — Agriculture chapters</span></div>
+          <div class="book-row"><span class="book-text bullet">• Ministry of Agriculture reports &amp; schemes</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Yojana &amp; Kurukshetra (agriculture issues)</span>
+            <a href="" class="buy-btn" id="buy-kurukshetra" style="display:none;">🛒 Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Science &amp; Technology</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• NCERT Science (Class VI–X basics)</span></div>
+          <div class="book-row"><span class="book-text note">• Current Affairs: ISRO, DRDO, AI, Robotics, IT, Space, Nuclear Tech</span></div>
+          <div class="book-row"><span class="book-text note">• Rajya Sabha TV discussions (selective)</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Environment &amp; Disaster Management</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Shankar IAS Environment Book</span>
+            <a href="" class="buy-btn" id="buy-shankar-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text bullet">• NDMA Guidelines (Disaster Management)</span></div>
+          <div class="book-row"><span class="book-text bullet">• 2nd ARC Report (Crisis Management)</span></div>
+          <div class="book-row"><span class="book-text note">• Climate Change: Paris Agreement, COP meetings, IPCC Reports</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Internal Security</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row"><span class="book-text bullet">• 2nd ARC Report on Internal Security</span></div>
+          <div class="book-row">
+            <span class="book-text bullet">• Ashok Kumar IPS — Challenges to Internal Security of India</span>
+            <a href="" class="buy-btn" id="buy-ashok-kumar" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text note">• Current examples from national security news</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GS4 / Ethics -->
+    <div class="section-heading">🌟 GS Paper IV — Ethics, Integrity &amp; Aptitude</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Ethics &amp; Integrity Books</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Lexicon for Ethics, Integrity &amp; Aptitude (Crisp Publications)</span>
+            <a href="" class="buy-btn" id="buy-lexicon" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row">
+            <span class="book-text bullet">• Ethics, Integrity &amp; Aptitude — Subba Rao &amp; P.N. Roy Chowdhury</span>
+            <a href="" class="buy-btn" id="buy-subba-rao" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text bullet">• 2nd ARC Report on Ethics in Governance</span></div>
+          <div class="book-row"><span class="book-text note">• Practice Case Studies from Vision/ForumIAS compilations</span></div>
+          <div class="book-row"><span class="book-text note">• Use real thinkers: Gandhi, Kalam, Radhakrishnan, Verghese Kurien, etc.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Sources -->
+    <div class="section-heading">📰 Other Important Sources</div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Must-Follow Resources</h3></div>
+        <div class="subject-card-body">
+          <div class="book-row">
+            <span class="book-text bullet">• Yojana &amp; Kurukshetra — social, rural, economic issues</span>
+            <a href="" class="buy-btn" id="buy-yojana-mains" style="display:none;">🛒 Buy</a>
+          </div>
+          <div class="book-row"><span class="book-text bullet">• NITI Aayog Reports (Vision Documents, SDG India Index)</span></div>
+          <div class="book-row"><span class="book-text bullet">• ARC Reports (2nd ARC — especially Governance &amp; Ethics)</span></div>
+          <div class="book-row"><span class="book-text note">• Economic Survey + Budget — indispensable every year</span></div>
+          <div class="book-row"><span class="book-text bullet">• Newspapers: The Hindu, Indian Express (daily editorials)</span></div>
+          <div class="book-row"><span class="book-text bullet">• PIB &amp; PRS India — policies, schemes, bills</span></div>
+        </div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-header"><h3>Mains Preparation Strategy</h3></div>
+        <div class="subject-card-body strategy-card" style="background:none;border:none;padding:14px 0;">
+          <ol>
+            <li>Previous Year Mains papers (last 10 years) — mandatory</li>
+            <li>Answer writing practice — daily or every alternate day</li>
+            <li>Join one focused test series (Vision IAS, ForumIAS, Insights)</li>
+            <li>Revise notes at least 3–4 times before Mains</li>
+            <li>Keep examples and data handy for every GS topic</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /panel-mains -->
+
+</main>
+
+<!-- ── CTA STRIP ── -->
+<div class="cta-strip">
+  <div class="container">
+    <h2>Practice What You Study</h2>
+    <p>Evaluate your Mains answers instantly with GurukulAI — AI feedback, model answers, and score breakdown in 60 seconds.</p>
+    <a href="https://app.gurukulai.in/login" class="btn btn-primary">Start Free — No Card Needed →</a>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="margin-bottom:12px;display:inline-flex;">
+          <div class="nav-logo-icon"><img src="favicon.png" alt="GurukulAI" width="24" height="24" style="object-fit:contain;display:block;" /></div>
+          GurukulAI
+        </a>
+        <p>AI-powered UPSC Mains answer evaluation. Instant feedback, model answers, and progress tracking.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="/#features">Features</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#compare">Compare</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="/books.html">📚 Recommended Books</a>
+        <a href="https://app.gurukulai.in/practice">Prelims PYQ</a>
+        <a href="https://app.gurukulai.in/gurukulai-chat">Ask Guru AI</a>
+        <a href="https://app.gurukulai.in/evaluate">Evaluate Answer</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="mailto:gurukulxai@gmail.com">gurukulxai@gmail.com</a>
+        <a href="/#faq">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GurukulAI. All rights reserved.</p>
+      <p>Made with ❤️ in India, for UPSC Aspirants</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  window.addEventListener('scroll', () => {
+    document.getElementById('mobileMenu').classList.remove('open');
+  });
+
+  function switchTab(tab, btn) {
+    // Update buttons
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    // Show correct panel
+    document.querySelectorAll('.content-panel').forEach(p => p.classList.add('hidden'));
+    document.getElementById('panel-' + tab).classList.remove('hidden');
+    // Scroll to top of content
+    document.querySelector('.tab-bar-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── To activate a Buy button, paste the Amazon affiliate URL here:
+  // Format: { id: 'affiliate-url' }
+  const affiliateLinks = {
+    'buy-ncerts-history':  'https://amzn.to/40Jz6RY',   // Old NCERTs History
+    'buy-tn-history':      'https://amzn.to/3NRhAZ1',   // Tamil Nadu State Board History
+    'buy-laxmikanth':      'https://amzn.to/4stEgxy',   // Indian Polity
+    'buy-laxmikanth-mains':'https://amzn.to/4stEgxy',
+    'buy-spectrum':        'https://amzn.to/4c0GWvN',   // Spectrum Modern India
+    'buy-spectrum-mains':  'https://amzn.to/4c0GWvN',
+    'buy-bipan':           'https://amzn.to/4rUMkGI',   // Bipan Chandra
+    'buy-bipan-mains':     'https://amzn.to/4rUMkGI',
+    'buy-singhania':       'https://amzn.to/41o4i9n',   // Nitin Singhania Art & Culture
+    'buy-singhania-mains': 'https://amzn.to/41o4i9n',
+    'buy-leong':           'https://amzn.to/3NrC8XX',   // G.C. Leong
+    'buy-leong-mains':     'https://amzn.to/3NrC8XX',
+    'buy-atlas':           'https://amzn.to/4bUevAC',   // Atlas
+    'buy-atlas-mains':     'https://amzn.to/4bUevAC',
+    'buy-ramesh-singh':    'https://amzn.to/4bDKWSu',   // Ramesh Singh Economy
+    'buy-ramesh-mains':    'https://amzn.to/4bDKWSu',
+    'buy-sanjiv-verma':    'https://amzn.to/4bkw2BO',   // Sanjiv Verma Economy
+    'buy-sanjiv-mains':    'https://amzn.to/4bkw2BO',
+    'buy-shankar':         'https://amzn.to/4uIMNhD',   // Shankar IAS Environment
+    'buy-shankar-mains':   'https://amzn.to/4uIMNhD',
+    'buy-aggarwal':        'https://amzn.to/4bUuGxH',   // RS Aggarwal CSAT
+    'buy-rs-sharma':       'https://amzn.to/4bxbPaM',   // RS Sharma Ancient India
+    'buy-satish-chandra':  'https://amzn.to/40JqjiQ',   // Satish Chandra Medieval
+    'buy-dd-basu':         'https://amzn.to/40FmwDf',   // DD Basu Constitution
+    'buy-pavneet':         'https://amzn.to/4bAsZEn',   // Pavneet Singh IR
+    'buy-norman-lowe':     'https://amzn.to/3NuD8uq',   // Norman Lowe World History
+    'buy-ram-ahuja':       'https://amzn.to/3PvPqDh',   // Ram Ahuja Society
+    'buy-lexicon':         'https://amzn.to/4rKRqoC',   // Lexicon Ethics
+    'buy-subba-rao':       'https://amzn.to/3PeaSNd',   // Subba Rao Ethics
+    'buy-ashok-kumar':     'https://amzn.to/40Gd6Yb',   // Ashok Kumar Security
+    'buy-yojana':          'https://amzn.to/4rGcahd',   // Yojana magazine
+    'buy-yojana-mains':    'https://amzn.to/4rGcahd',
+    'buy-kurukshetra':     'https://amzn.to/4rGcahd',   // Kurukshetra
+    'ncert-fine-arts':     'https://amzn.to/3PdN0JD',   // NCERT Fine Arts
+    'ncert-geography':     'https://amzn.to/4cVLUfh',   // NCERT Geography
+    'ncert-polity':        'https://amzn.to/4uIC8Ds',   // NCERT Polity
+    'ncert-economics':     'https://amzn.to/4lDRo0m',   // NCERT Economics
+    'ncert-biology':       'https://amzn.to/3PpG4ZO',   // NCERT Biology
+
+  };
+
+  // Auto-activate buttons that have a non-empty link
+  Object.entries(affiliateLinks).forEach(([id, url]) => {
+    if (url && url.trim()) {
+      const el = document.getElementById(id);
+      if (el) { el.href = url; el.style.display = 'inline-flex'; }
+    }
+  });
+</script>
+
+</body>
+</html>
