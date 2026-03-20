@@ -743,6 +743,23 @@
       .proof-inner { gap: 24px; }
     }
   </style>
+  <style>
+    i[data-lucide], svg[data-lucide] {
+      display: inline-block;
+      vertical-align: -0.15em;
+      width: 1em; height: 1em;
+      flex-shrink: 0;
+    }
+    .feature-icon svg[data-lucide] { width:22px; height:22px; }
+    .proof-item .icon svg[data-lucide] { width:18px; height:18px; vertical-align:middle; }
+    .floating-badge svg[data-lucide] { width:14px; height:14px; vertical-align:middle; }
+    .icon.check svg[data-lucide], .check-icon svg[data-lucide] { color:#22c55e; }
+    .icon.cross svg[data-lucide], .cross-icon svg[data-lucide] { color:#ef4444; }
+    .plan-credits-table svg[data-lucide] { width:15px; height:15px; vertical-align:middle; }
+    .popular-badge svg[data-lucide], .plan-name svg[data-lucide] { width:16px; height:16px; vertical-align:-0.1em; }
+    .btn svg[data-lucide] { width:18px; height:18px; vertical-align:-0.2em; margin-right:4px; }
+  </style>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
 
@@ -788,7 +805,7 @@
     <div class="hero-content">
 <div class="hero-tag" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:20px;">
   <span class="badge">🇮🇳 Built by UPSC Aspirant</span>
-  <span class="badge" style="background:rgba(16,185,129,0.1);border-color:rgba(16,185,129,0.3);color:#059669;">✓ UPSC 2025 Paper Calibrated</span>
+  <span class="badge" style="background:rgba(16,185,129,0.1);border-color:rgba(16,185,129,0.3);color:#059669;"><i data-lucide="check"></i> UPSC 2025 Paper Calibrated</span>
 </div>
       <h1>Evaluate Your <span class="gradient-text">Mains Answers</span> with AI in 60 Seconds</h1>
       <p class="hero-sub">
@@ -821,8 +838,8 @@
         <!-- Topper Answer Sheet -->
         <div class="topper-sheet-wrap">
           <div class="topper-sheet-header">
-            <span class="topper-sheet-label">📄 Handwritten Answer Sheet</span>
-            <span class="topper-sheet-badge">🏆 AIR 1 · 2024</span>
+            <span class="topper-sheet-label"><i data-lucide="file-text"></i> Handwritten Answer Sheet</span>
+            <span class="topper-sheet-badge"><i data-lucide="trophy"></i> AIR 1 · 2024</span>
           </div>
           <img
             src="shakti-dubey-answer.jpg.jpg"
@@ -831,7 +848,7 @@
             loading="lazy"
           />
           <div class="topper-sheet-caption">
-            <span>✍️</span>
+            <span><i data-lucide="pen-line"></i></span>
             <span><strong>Shakti Dubey</strong> · AIR 1, UPSC CSE 2024 · GS Answer Sheet</span>
           </div>
         </div>
@@ -875,15 +892,15 @@
           </div>
           <div style="font-size:13px;color:var(--muted);font-weight:700;margin-bottom:10px;">Estimated Score: <span style="color:#10b981;font-size:20px;">9/15</span></div>
           <div>
-            <span class="mock-tag" style="background:rgba(16,185,129,0.15);color:#10b981;">✓ Good flow</span>
-            <span class="mock-tag" style="background:rgba(245,158,11,0.15);color:#f59e0b;">⚠ Add examples</span>
-            <span class="mock-tag" style="background:rgba(108,99,255,0.15);color:#a5a0ff;">💡 Temple relevance</span>
+            <span class="mock-tag" style="background:rgba(16,185,129,0.15);color:#10b981;"><i data-lucide="check"></i> Good flow</span>
+            <span class="mock-tag" style="background:rgba(245,158,11,0.15);color:#f59e0b;"><i data-lucide="alert-triangle"></i> Add examples</span>
+            <span class="mock-tag" style="background:rgba(108,99,255,0.15);color:#a5a0ff;"><i data-lucide="lightbulb"></i> Temple relevance</span>
           </div>
           <div class="floating-badge floating-badge-1">
-            <span>⚡</span> Evaluated in 48s
+            <span><i data-lucide="zap"></i></span> Evaluated in 48s
           </div>
           <div class="floating-badge floating-badge-2">
-            <span>📄</span> Model Answer Ready
+            <span><i data-lucide="file-text"></i></span> Model Answer Ready
           </div>
         </div>
 
@@ -895,11 +912,11 @@
 <!-- ─── PROOF BAR ─────────────────────────────────────── -->
 <div class="proof-bar">
   <div class="container proof-inner">
-    <div class="proof-item"><span class="icon">🎓</span> UPSC-aligned evaluation</div>
-    <div class="proof-item"><span class="icon">⚡</span> Instant AI feedback</div>
-    <div class="proof-item"><span class="icon">📊</span> Track your improvement</div>
-    <div class="proof-item"><span class="icon">📝</span> UPSC model answers included</div>
-    <div class="proof-item"><span class="icon">🔒</span> Secure & private</div>
+    <div class="proof-item"><span class="icon"><i data-lucide="graduation-cap"></i></span> UPSC-aligned evaluation</div>
+    <div class="proof-item"><span class="icon"><i data-lucide="zap"></i></span> Instant AI feedback</div>
+    <div class="proof-item"><span class="icon"><i data-lucide="bar-chart-2"></i></span> Track your improvement</div>
+    <div class="proof-item"><span class="icon"><i data-lucide="file-text"></i></span> UPSC model answers included</div>
+    <div class="proof-item"><span class="icon"><i data-lucide="lock"></i></span> Secure & private</div>
   </div>
 </div>
 
@@ -913,32 +930,32 @@
     </div>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(108,99,255,0.15);">⚡</div>
+        <div class="feature-icon" style="background:rgba(108,99,255,0.15);"><i data-lucide="zap"></i></div>
         <div class="feature-title">Instant Evaluation</div>
         <div class="feature-desc">Upload your handwritten or typed answer. Get detailed feedback on introduction, content, structure & conclusion in under 60 seconds.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(245,158,11,0.15);">📊</div>
+        <div class="feature-icon" style="background:rgba(245,158,11,0.15);"><i data-lucide="bar-chart-2"></i></div>
         <div class="feature-title">Score Estimation</div>
         <div class="feature-desc">AI estimates your likely UPSC marks with a breakdown per section — so you know exactly what to improve before the exam.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(16,185,129,0.15);">📝</div>
+        <div class="feature-icon" style="background:rgba(16,185,129,0.15);"><i data-lucide="file-text"></i></div>
         <div class="feature-title">Model Answers</div>
         <div class="feature-desc">Every evaluation comes with a UPSC-standard model answer so you can study the ideal response side-by-side with yours.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(239,68,68,0.15);">🏗️</div>
+        <div class="feature-icon" style="background:rgba(239,68,68,0.15);"><i data-lucide="layout-template"></i></div>
         <div class="feature-title">Structure Analysis</div>
         <div class="feature-desc">Checks introduction quality, paragraph flow, diagrams, keyword usage, and conclusion strength against UPSC rubrics.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(139,92,246,0.15);">📖</div>
+        <div class="feature-icon" style="background:rgba(139,92,246,0.15);"><i data-lucide="book-open"></i></div>
         <div class="feature-title">Prelims PYQ Practice</div>
         <div class="feature-desc">Practice thousands of previous year MCQs with smart filters by year, subject, topic & difficulty. Explanations included.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(20,184,166,0.15);">🤖</div>
+        <div class="feature-icon" style="background:rgba(20,184,166,0.15);"><i data-lucide="bot"></i></div>
         <div class="feature-title">Ask Guru AI</div>
         <div class="feature-desc">Ask any UPSC topic question and get a structured, examiner-quality explanation instantly — your 24/7 AI mentor.</div>
       </div>
@@ -993,21 +1010,21 @@
     <div class="pricing-grid">
       <!-- FREE -->
       <div class="pricing-card">
-        <div class="plan-name" style="color:var(--muted);">🆓 Free Plan</div>
+        <div class="plan-name" style="color:var(--muted);"><i data-lucide="gift"></i> Free Plan</div>
         <div class="plan-title">Aspirant</div>
         <div class="plan-price">₹0<span>/forever</span></div>
         <div class="plan-price-sub">Always free, no card required</div>
         <hr class="plan-divider" />
         <ul class="plan-features">
-          <li><span class="icon check">✅</span> <strong>10 credits</strong>/month</li>
-          <li><span class="icon cross">❌</span> Buy extra credits</li>
-          <!-- <li><span class="icon cross">❌</span> Credits roll over</li> -->
-          <!-- <li><span class="icon cross">❌</span> Multiple question evaluations</li>
-          <li><span class="icon cross">❌</span> Full paper evaluations</li> -->
-          <li><span class="icon check">✅</span> Model answers included</li>
-          <li><span class="icon check">✅</span> Evaluation history (last 7 days)</li>
-          <li><span class="icon cross">✅</span> Progress tracking</li>
-          <li><span class="icon cross">❌</span> Download PDF report</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> <strong>10 credits</strong>/month</li>
+          <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Buy extra credits</li>
+          <!-- <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Credits roll over</li> -->
+          <!-- <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Multiple question evaluations</li>
+          <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Full paper evaluations</li> -->
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Model answers included</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Evaluation history (last 7 days)</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Progress tracking</li>
+          <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Download PDF report</li>
         </ul>
         <div class="plan-btn">
           <a href="https://app.gurukulai.in/login" class="btn btn-outline">Get Started Free</a>
@@ -1016,23 +1033,23 @@
 
       <!-- BASIC -->
       <div class="pricing-card featured">
-        <div class="popular-badge">🔥 Most Popular</div>
-        <div class="plan-name" style="color:#f59e0b;">💛 Basic Plan</div>
+        <div class="popular-badge"><i data-lucide="flame"></i> Most Popular</div>
+        <div class="plan-name" style="color:#f59e0b;"><i data-lucide="star"></i> Basic Plan</div>
         <div class="plan-title">Practitioner</div>
         <div class="plan-price" id="basicPrice">₹199<span>/month</span></div>
         <div class="plan-price-sub" id="basicSub">or ₹1,799/year · <span style="color:var(--accent2);">save ₹589</span></div>
         <hr class="plan-divider" />
         <ul class="plan-features">
-          <li><span class="icon check">✅</span> <strong>100 credits</strong>/month</li>
-          <li><span class="icon check">✅</span> Buy extra credits</li>
-          <!-- <li><span class="icon cross">❌</span> Credits roll over</li> -->
-          <!-- <li><span class="icon check">✅</span> Multiple question evaluations</li>
-          <li><span class="icon cross">❌</span> Full paper evaluations</li> -->
-          <li><span class="icon check">✅</span> Model answers included</li>
-          <li><span class="icon check">✅</span> History: last 60 days</li>
-          <li><span class="icon check">✅</span> Progress tracking </li>
-          <li><span class="icon check">✅</span> Download PDF report</li>
-          <li><span class="icon check">✅</span> Email support</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> <strong>100 credits</strong>/month</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Buy extra credits</li>
+          <!-- <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Credits roll over</li> -->
+          <!-- <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Multiple question evaluations</li>
+          <li><span class="icon cross"><i data-lucide="x-circle"></i></span> Full paper evaluations</li> -->
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Model answers included</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> History: last 60 days</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Progress tracking </li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Download PDF report</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Email support</li>
         </ul>
         <div class="plan-btn">
           <a href="https://app.gurukulai.in/login" class="btn btn-primary">Start Practitioner</a>
@@ -1041,22 +1058,22 @@
 
       <!-- PRO -->
       <div class="pricing-card">
-        <div class="plan-name" style="color:#ef4444;">🔥 Pro Plan</div>
+        <div class="plan-name" style="color:#ef4444;"><i data-lucide="flame"></i> Pro Plan</div>
         <div class="plan-title">Serious Aspirant</div>
         <div class="plan-price" id="proPrice">₹399<span>/month</span></div>
         <div class="plan-price-sub" id="proSub">or ₹3,499/year · <span style="color:var(--accent2);">save ₹1,289</span></div>
         <hr class="plan-divider" />
         <ul class="plan-features">
-          <li><span class="icon check">✅</span> <strong>300 credits</strong>/month</li>
-          <li><span class="icon check">✅</span> Buy extra credits</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> <strong>300 credits</strong>/month</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Buy extra credits</li>
           <!-- <li><span class="icon check">❌</span> Credits roll over</li> -->
-          <li><span class="icon check">✅</span> Model answers included</li>
-          <!-- <li><span class="icon check">✅</span> Full paper evaluations</li>
-          <li><span class="icon check">✅</span> Model answers included</li> -->
-          <li><span class="icon check">✅</span> Full history forever</li>
-          <li><span class="icon check">✅</span> Advanced progress + graphs</li>
-          <li><span class="icon check">✅</span> Download PDF report</li>
-          <li><span class="icon check">✅</span> Priority email support (24hr)</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Model answers included</li>
+          <!-- <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Full paper evaluations</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Model answers included</li> -->
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Full history forever</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Advanced progress + graphs</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Download PDF report</li>
+          <li><span class="icon check"><i data-lucide="check-circle-2"></i></span> Priority email support (24hr)</li>
         </ul>
         <div class="plan-btn">
           <a href="https://app.gurukulai.in/login" class="btn btn-outline">Go Pro</a>
@@ -1070,7 +1087,7 @@
 <section class="section credits-section" id="credits">
   <div class="container">
     <div class="center">
-      <span class="badge">💳 Credit System</span>
+      <span class="badge"><i data-lucide="credit-card"></i> Credit System</span>
       <h2 class="section-title" style="margin-top:16px;">Simple <span class="gradient-text">Credit-Based</span> Usage</h2>
       <p class="section-sub">Every action costs credits. Know exactly what you're spending — no surprises.</p>
     </div>
@@ -1085,27 +1102,27 @@
       </thead>
       <tbody>
         <tr>
-          <td>⚡ Single answer evaluation</td>
+          <td><i data-lucide="zap"></i> Single answer evaluation</td>
           <td><span class="credit-chip">1 credit</span></td>
         </tr>
         <tr>
-          <td>🤖 Ask Guru <span class="feature-note">per query</span></td>
+          <td><i data-lucide="bot"></i> Ask Guru <span class="feature-note">per query</span></td>
           <td><span class="credit-chip">1 credit</span></td>
         </tr>
         <tr>
-          <td>📖 Prelims MCQ <span class="feature-note">1 question with answer + explanation</span></td>
+          <td><i data-lucide="book-open"></i> Prelims MCQ <span class="feature-note">1 question with answer + explanation</span></td>
           <td><span class="credit-chip">1 credit</span></td>
         </tr>
         <tr>
-          <td>📝 Mains Q&amp;A <span class="feature-note">1 question with answer + explanation</span></td>
+          <td><i data-lucide="file-text"></i> Mains Q&amp;A <span class="feature-note">1 question with answer + explanation</span></td>
           <td><span class="credit-chip">1 credit</span></td>
         </tr>
         <tr>
-          <td>📋 Multiple evaluation <span class="feature-note">per answer in the set</span></td>
+          <td><i data-lucide="clipboard-list"></i> Multiple evaluation <span class="feature-note">per answer in the set</span></td>
           <td><span class="credit-chip">1 credit</span></td>
         </tr>
         <tr>
-          <td>📄 Full paper evaluation <span class="feature-note">up to 20 answers</span></td>
+          <td><i data-lucide="file-text"></i> Full paper evaluation <span class="feature-note">up to 20 answers</span></td>
           <td><span class="credit-chip">15 credits</span></td>
         </tr>
       </tbody>
@@ -1122,9 +1139,9 @@
           <thead>
             <tr>
               <th></th>
-              <th>🆓 Free</th>
-              <th class="pct-highlight">💛 Basic</th>
-              <th>🔥 Pro</th>
+              <th><i data-lucide="gift"></i> Free</th>
+              <th class="pct-highlight"><i data-lucide="star"></i> Basic</th>
+              <th><i data-lucide="flame"></i> Pro</th>
             </tr>
           </thead>
           <tbody>
@@ -1142,15 +1159,15 @@
             </tr>
             <tr>
               <td>Buy Extra Credits</td>
-              <td><span style="color:#ef4444;font-size:16px;">❌</span></td>
-              <td class="pct-highlight"><span style="color:#65a30d;font-size:16px;">✅</span></td>
-              <td><span style="color:#65a30d;font-size:16px;">✅</span></td>
+              <td><span style="color:#ef4444;font-size:16px;"><i data-lucide="x-circle"></i></span></td>
+              <td class="pct-highlight"><span style="color:#65a30d;font-size:16px;"><i data-lucide="check-circle-2"></i></span></td>
+              <td><span style="color:#65a30d;font-size:16px;"><i data-lucide="check-circle-2"></i></span></td>
             </tr>
             <tr>
               <td>Credits Roll Over</td>
-              <td><span style="color:#ef4444;font-size:16px;">❌</span></td>
-              <td class="pct-highlight"><span style="color:#ef4444;font-size:16px;">❌</span></td>
-              <td><span style="color:#65a30d;font-size:16px;">✅</span> (up to 2×)</td>
+              <td><span style="color:#ef4444;font-size:16px;"><i data-lucide="x-circle"></i></span></td>
+              <td class="pct-highlight"><span style="color:#ef4444;font-size:16px;"><i data-lucide="x-circle"></i></span></td>
+              <td><span style="color:#65a30d;font-size:16px;"><i data-lucide="check-circle-2"></i></span> (up to 2×)</td>
             </tr>
           </tbody>
         </table>
@@ -1227,47 +1244,47 @@
         <thead>
           <tr>
             <th style="text-align:left;width:30%;">Feature</th>
-            <th class="highlight">🎓 GurukulAI</th>
-            <th>🏫 Coaching Institute</th>
-            <th>🤖 ChatGPT / Gemini</th>
+            <th class="highlight"><i data-lucide="graduation-cap"></i> GurukulAI</th>
+            <th><i data-lucide="building-2"></i> Coaching Institute</th>
+            <th><i data-lucide="bot"></i> ChatGPT / Gemini</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="row-label">Evaluation Speed</td>
-            <td class="highlight">⚡ Under 60 seconds</td>
-            <td>📅 2–4 weeks</td>
+            <td class="highlight"><i data-lucide="zap"></i> Under 60 seconds</td>
+            <td><i data-lucide="calendar"></i> 2–4 weeks</td>
             <td>30–60 seconds</td>
           </tr>
           <tr>
             <td class="row-label">UPSC-Specific Scoring</td>
-            <td class="highlight"><span class="check-icon">✅</span> Yes, calibrated</td>
-            <td><span class="check-icon">✅</span> Yes (varies by teacher)</td>
-            <td><span class="cross-icon">❌</span> Generic only</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Yes, calibrated</td>
+            <td><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Yes (varies by teacher)</td>
+            <td><span class="cross-icon"><i data-lucide="x-circle"></i></span> Generic only</td>
           </tr>
           <tr>
             <td class="row-label">Model Answers</td>
-            <td class="highlight"><span class="check-icon">✅</span> Every evaluation</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Every evaluation</td>
             <td>Sometimes</td>
-            <td>⚠️ Not reliable</td>
+            <td><i data-lucide="alert-triangle"></i> Not reliable</td>
           </tr>
           <tr>
             <td class="row-label">Available 24/7</td>
-            <td class="highlight"><span class="check-icon">✅</span> Yes</td>
-            <td><span class="cross-icon">❌</span> Class schedule</td>
-            <td><span class="check-icon">✅</span> Yes</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Yes</td>
+            <td><span class="cross-icon"><i data-lucide="x-circle"></i></span> Class schedule</td>
+            <td><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Yes</td>
           </tr>
           <tr>
             <td class="row-label">Progress Tracking</td>
-            <td class="highlight"><span class="check-icon">✅</span> Automated graphs</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Automated graphs</td>
             <td>Manual (if any)</td>
-            <td><span class="cross-icon">❌</span> No</td>
+            <td><span class="cross-icon"><i data-lucide="x-circle"></i></span> No</td>
           </tr>
           <!-- <tr>
             <td class="row-label">Weakness Heatmap</td>
-            <td class="highlight"><span class="check-icon">✅</span> Pro plan</td>
-            <td><span class="cross-icon">❌</span> No</td>
-            <td><span class="cross-icon">❌</span> No</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Pro plan</td>
+            <td><span class="cross-icon"><i data-lucide="x-circle"></i></span> No</td>
+            <td><span class="cross-icon"><i data-lucide="x-circle"></i></span> No</td>
           </tr> -->
           <tr>
             <td class="row-label">Cost (Monthly)</td>
@@ -1277,15 +1294,15 @@
           </tr>
           <tr>
             <td class="row-label">Personalised Feedback</td>
-            <td class="highlight"><span class="check-icon">✅</span> Per-answer AI</td>
-            <td>⚠️ Batch class</td>
-            <td>⚠️ Not UPSC-tuned</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Per-answer AI</td>
+            <td><i data-lucide="alert-triangle"></i> Batch class</td>
+            <td><i data-lucide="alert-triangle"></i> Not UPSC-tuned</td>
           </tr>
           <tr>
             <td class="row-label">Prelims PYQ Practice</td>
-            <td class="highlight"><span class="check-icon">✅</span> Built-in</td>
-            <td>⚠️ Separate material</td>
-            <td><span class="cross-icon">❌</span> No</td>
+            <td class="highlight"><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Built-in</td>
+            <td><i data-lucide="alert-triangle"></i> Separate material</td>
+            <td><span class="cross-icon"><i data-lucide="x-circle"></i></span> No</td>
           </tr>
         </tbody>
       </table>
@@ -1399,7 +1416,7 @@
     <p>Join thousands of UPSC aspirants getting smarter, faster feedback. Free plan available — no credit card needed.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
       <a href="https://app.gurukulai.in/login" class="btn btn-primary" style="padding:15px 32px;font-size:16px;">
-        🚀 Start Free
+        <i data-lucide="rocket"></i> Start Free
       </a>
       <a href="#pricing" class="btn btn-outline" style="padding:15px 28px;font-size:16px;">
         View Plans →
@@ -1444,7 +1461,7 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 GurukulAI. All rights reserved.</p>
-      <p style="color:var(--muted);font-size:13px;">Made with ❤️ in India, for UPSC Aspirants</p>
+      <p style="color:var(--muted);font-size:13px;">Made with <i data-lucide="heart"></i> in India, for UPSC Aspirants</p>
     </div>
   </div>
 </footer>
@@ -1502,5 +1519,6 @@
     document.getElementById('mobileMenu').classList.remove('open');
   });
 </script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

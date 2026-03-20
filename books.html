@@ -277,6 +277,19 @@
       .tab-btn { padding: 14px 16px; font-size: 13px; }
     }
   </style>
+  <style>
+    i[data-lucide], svg[data-lucide] {
+      display: inline-block;
+      vertical-align: -0.15em;
+      width: 1em; height: 1em;
+      flex-shrink: 0;
+    }
+    .page-badge svg[data-lucide] { width:16px; height:16px; vertical-align:-0.2em; }
+    .tab-btn svg[data-lucide] { width:15px; height:15px; vertical-align:-0.15em; }
+    .section-heading svg[data-lucide] { width:18px; height:18px; vertical-align:-0.2em; }
+    .buy-btn svg[data-lucide] { width:13px; height:13px; vertical-align:-0.1em; margin-right:2px; }
+  </style>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
 
@@ -313,7 +326,7 @@
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="container">
-      <div class="page-badge">📚 UPSC 2025–26 Edition</div>
+      <div class="page-badge"><i data-lucide="book-open"></i> UPSC 2025–26 Edition</div>
       <h1>Complete UPSC <span>Recommended Booklist</span></h1>
     </div>
   </div>
@@ -322,8 +335,8 @@
 <!-- ── STICKY TAB BAR ── -->
 <div class="tab-bar-wrap">
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('prelims', this)">📖 Prelims</button>
-    <button class="tab-btn" onclick="switchTab('mains', this)">📝 Mains</button>
+    <button class="tab-btn active" onclick="switchTab('prelims', this)"><i data-lucide="book-open"></i> Prelims</button>
+    <button class="tab-btn" onclick="switchTab('mains', this)"><i data-lucide="pen-line"></i> Mains</button>
   </div>
 </div>
 
@@ -335,11 +348,11 @@
   <div class="container">
 
     <div class="affiliate-notice">
-      🛒 <span><strong>Affiliate Disclosure:</strong> Buy buttons are Amazon affiliate links. You pay the same price — we earn a small commission that helps keep GurukulAI free.</span>
+      <i data-lucide="shopping-cart"></i> <span><strong>Affiliate Disclosure:</strong> Buy buttons are Amazon affiliate links. You pay the same price — we earn a small commission that helps keep GurukulAI free.</span>
     </div>
 
     <!-- Core Subjects -->
-    <div class="section-heading">📘 Core Subjects &amp; Standard Books</div>
+    <div class="section-heading"><i data-lucide="book"></i> Core Subjects &amp; Standard Books</div>
     <div class="subject-grid">
 
       <!-- History -->
@@ -349,37 +362,37 @@
           <div class="book-row"><span class="book-text label">Ancient &amp; Medieval History</span></div>
           <div class="book-row">
             <span class="book-text bullet">• Old NCERTs (Class VI–X, R.S. Sharma, Satish Chandra)</span>
-            <a href="" class="buy-btn" id="buy-ncerts-history" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-ncerts-history" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Tamil Nadu State Board History (Class 11 &amp; 12) — concise &amp; exam-oriented</span>
-            <a href="" class="buy-btn" id="buy-tn-history" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-tn-history" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Ancient India by R.S. Sharma</span>
-            <a href="" class="buy-btn" id="buy-rs-sharma" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-rs-sharma" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Medieval India by Satish Chandra (selectively)</span>
-            <a href="" class="buy-btn" id="buy-satish-chandra" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-satish-chandra" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text label" style="margin-top:4px;">Modern History</span></div>
           <div class="book-row">
             <span class="book-text bullet">• A Brief History of Modern India by Spectrum (Rajiv Ahir) — Bible for Prelims</span>
-            <a href="" class="buy-btn" id="buy-spectrum" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-spectrum" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• India's Struggle for Independence by Bipan Chandra (selectively)</span>
-            <a href="" class="buy-btn" id="buy-bipan" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-bipan" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text label" style="margin-top:4px;">Art &amp; Culture</span></div>
           <div class="book-row">
             <span class="book-text bullet">• Nitin Singhania's Indian Art &amp; Culture (Prelims + Mains)</span>
-            <a href="" class="buy-btn" id="buy-singhania" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-singhania" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• NCERT Fine Arts (Class 11)</span>
-             <a href="" class="buy-btn" id="ncert-fine-arts" style="display:none;">🛒 Buy</a>
+             <a href="" class="buy-btn" id="ncert-fine-arts" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -390,15 +403,15 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• NCERTs: Class VI–XII (especially Class XI Physical Geography, Class XII India: Physical Environment)</span>
-            <a href="" class="buy-btn" id="ncert-geography" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-geography" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Certificate Physical &amp; Human Geography by G.C. Leong</span>
-            <a href="" class="buy-btn" id="buy-leong" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-leong" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Atlas: Orient Black Swan / Oxford Student Atlas</span>
-            <a href="" class="buy-btn" id="buy-atlas" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-atlas" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -409,11 +422,11 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Indian Polity by M. Laxmikanth — read cover to cover</span>
-            <a href="" class="buy-btn" id="buy-laxmikanth" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-laxmikanth" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• NCERT Political Science (Class IX–XII)</span>
-            <a href="" class="buy-btn" id="ncert-polity" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-polity" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text note">• Bare Act — for quick reference to Constitution articles</span>
@@ -427,15 +440,15 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• NCERT Economics (Class IX–XII) — especially Macroeconomics Class XII</span>
-            <a href="" class="buy-btn" id="ncert-economics" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-economics" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Indian Economy by Ramesh Singh</span>
-            <a href="" class="buy-btn" id="buy-ramesh-singh" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-ramesh-singh" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Indian Economy by Sanjiv Verma (for clarity on basics)</span>
-            <a href="" class="buy-btn" id="buy-sanjiv-verma" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-sanjiv-verma" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text note">• Economic Survey (latest) — important for Prelims trends</span>
@@ -452,11 +465,11 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Shankar IAS Environment Book</span>
-            <a href="" class="buy-btn" id="buy-shankar" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-shankar" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• NCERT Biology (Class XII) — Ecology &amp; Environment chapters</span>
-            <a href="" class="buy-btn" id="ncert-biology" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-biology" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text note">• Current affairs: Climate Change, COP, Biodiversity conventions</span>
@@ -470,11 +483,11 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• NCERT Science (Class VI–X) for basics</span>
-            <a href="" class="buy-btn" id="ncert-science" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-science" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• NCERT Biology Class XI–XII (selectively)</span>
-            <a href="" class="buy-btn" id="ncert-biology" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-biology" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text label">Track Current Developments In:</span></div>
           <div class="book-row"><span class="book-text note">• Space (ISRO, NASA), Defence technology, IT, AI, Robotics, Biotech</span></div>
@@ -492,7 +505,7 @@
           <div class="book-row"><span class="book-text bullet">• PRS India (legislation tracking)</span></div>
           <div class="book-row">
             <span class="book-text bullet">• Yojana &amp; Kurukshetra (selective, important themes)</span>
-            <a href="" class="buy-btn" id="buy-yojana" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-yojana" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -504,11 +517,11 @@
           <div class="book-row"><span class="book-text bullet">• Previous Year CSAT Papers — compulsory practice</span></div>
           <div class="book-row">
             <span class="book-text bullet">• NCERT Maths (Class IX &amp; X) for fundamentals</span>
-            <a href="" class="buy-btn" id="ncert-maths" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-maths" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• R.S. Aggarwal's Quantitative Aptitude (if weak in quant)</span>
-            <a href="" class="buy-btn" id="buy-aggarwal" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-aggarwal" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -516,7 +529,7 @@
     </div><!-- /subject-grid -->
 
     <!-- Practice & Strategy -->
-    <div class="section-heading">📑 Practice &amp; Strategy</div>
+    <div class="section-heading"><i data-lucide="file-text"></i> Practice &amp; Strategy</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>Practice Materials</h3></div>
@@ -549,11 +562,11 @@
   <div class="container">
 
     <div class="affiliate-notice">
-      🛒 <span><strong>Affiliate Disclosure:</strong> Buy buttons are Amazon affiliate links. You pay the same price — we earn a small commission that helps keep GurukulAI free.</span>
+      <i data-lucide="shopping-cart"></i> <span><strong>Affiliate Disclosure:</strong> Buy buttons are Amazon affiliate links. You pay the same price — we earn a small commission that helps keep GurukulAI free.</span>
     </div>
 
     <!-- Essay -->
-    <div class="section-heading">✍️ Essay Paper</div>
+    <div class="section-heading"><i data-lucide="pen-line"></i> Essay Paper</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>Essay (GS Paper — General Studies)</h3></div>
@@ -568,22 +581,22 @@
     </div>
 
     <!-- GS1 -->
-    <div class="section-heading">📘 GS Paper I — History, Geography &amp; Society</div>
+    <div class="section-heading"><i data-lucide="book"></i> GS Paper I — History, Geography &amp; Society</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>History &amp; Culture</h3></div>
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Spectrum's Modern India (for revision)</span>
-            <a href="" class="buy-btn" id="buy-spectrum-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-spectrum-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Bipan Chandra — India's Struggle for Independence (selective)</span>
-            <a href="" class="buy-btn" id="buy-bipan-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-bipan-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Nitin Singhania — Indian Art &amp; Culture</span>
-            <a href="" class="buy-btn" id="buy-singhania-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-singhania-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -592,11 +605,11 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• NCERT World History (Class IX–X, selectively)</span>
-            <a href="" class="buy-btn" id="ncert-world-history" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-world-history" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Norman Lowe — Mastering Modern World History (important events)</span>
-            <a href="" class="buy-btn" id="buy-norman-lowe" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-norman-lowe" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -604,11 +617,11 @@
         <div class="subject-card-header"><h3>Indian Society</h3></div>
         <div class="subject-card-body">
           <div class="book-row"><span class="book-text bullet">• NCERT Sociology (Class XI &amp; XII)</span>
-            <a href="" class="buy-btn" id="ncert-sociology" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="ncert-sociology" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Ram Ahuja — Indian Society (selective chapters)</span>
-            <a href="" class="buy-btn" id="buy-ram-ahuja" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-ram-ahuja" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text note">• Current examples from newspapers (important for mains answers)</span></div>
         </div>
@@ -618,12 +631,12 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• G.C. Leong — Certificate Physical &amp; Human Geography</span>
-            <a href="" class="buy-btn" id="buy-leong-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-leong-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text bullet">• NCERT XI &amp; XII (India &amp; World Geography)</span></div>
           <div class="book-row">
             <span class="book-text bullet">• Oxford / Orient BlackSwan Student Atlas</span>
-            <a href="" class="buy-btn" id="buy-atlas-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-atlas-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text note">• Disaster Management: 2nd ARC Report, NDMA guidelines</span></div>
         </div>
@@ -631,18 +644,18 @@
     </div>
 
     <!-- GS2 -->
-    <div class="section-heading">⚖️ GS Paper II — Polity, Governance &amp; IR</div>
+    <div class="section-heading"><i data-lucide="scale"></i> GS Paper II — Polity, Governance &amp; IR</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>Polity &amp; Constitution</h3></div>
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• M. Laxmikanth — Indian Polity</span>
-            <a href="" class="buy-btn" id="buy-laxmikanth-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-laxmikanth-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• D.D. Basu — Introduction to the Constitution of India</span>
-            <a href="" class="buy-btn" id="buy-dd-basu" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-dd-basu" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -659,7 +672,7 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Pavneet Singh — International Relations</span>
-            <a href="" class="buy-btn" id="buy-pavneet" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-pavneet" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text bullet">• The Hindu / Indian Express editorials on IR</span></div>
           <div class="book-row"><span class="book-text note">• IDSA, ORF websites — research papers (selective)</span></div>
@@ -668,18 +681,18 @@
     </div>
 
     <!-- GS3 -->
-    <div class="section-heading">🌾 GS Paper III — Economy, Environment &amp; Security</div>
+    <div class="section-heading"><i data-lucide="wheat"></i> GS Paper III — Economy, Environment &amp; Security</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>Economy</h3></div>
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Indian Economy by Ramesh Singh</span>
-            <a href="" class="buy-btn" id="buy-ramesh-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-ramesh-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Indian Economy by Sanjiv Verma (for concepts)</span>
-            <a href="" class="buy-btn" id="buy-sanjiv-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-sanjiv-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text note">• Economic Survey (latest) — indispensable</span></div>
           <div class="book-row"><span class="book-text note">• Union Budget highlights (schemes &amp; allocations)</span></div>
@@ -692,7 +705,7 @@
           <div class="book-row"><span class="book-text bullet">• Ministry of Agriculture reports &amp; schemes</span></div>
           <div class="book-row">
             <span class="book-text bullet">• Yojana &amp; Kurukshetra (agriculture issues)</span>
-            <a href="" class="buy-btn" id="buy-kurukshetra" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-kurukshetra" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
         </div>
       </div>
@@ -709,7 +722,7 @@
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Shankar IAS Environment Book</span>
-            <a href="" class="buy-btn" id="buy-shankar-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-shankar-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text bullet">• NDMA Guidelines (Disaster Management)</span></div>
           <div class="book-row"><span class="book-text bullet">• 2nd ARC Report (Crisis Management)</span></div>
@@ -722,7 +735,7 @@
           <div class="book-row"><span class="book-text bullet">• 2nd ARC Report on Internal Security</span></div>
           <div class="book-row">
             <span class="book-text bullet">• Ashok Kumar IPS — Challenges to Internal Security of India</span>
-            <a href="" class="buy-btn" id="buy-ashok-kumar" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-ashok-kumar" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text note">• Current examples from national security news</span></div>
         </div>
@@ -730,18 +743,18 @@
     </div>
 
     <!-- GS4 / Ethics -->
-    <div class="section-heading">🌟 GS Paper IV — Ethics, Integrity &amp; Aptitude</div>
+    <div class="section-heading"><i data-lucide="star"></i> GS Paper IV — Ethics, Integrity &amp; Aptitude</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>Ethics &amp; Integrity Books</h3></div>
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Lexicon for Ethics, Integrity &amp; Aptitude (Crisp Publications)</span>
-            <a href="" class="buy-btn" id="buy-lexicon" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-lexicon" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row">
             <span class="book-text bullet">• Ethics, Integrity &amp; Aptitude — Subba Rao &amp; P.N. Roy Chowdhury</span>
-            <a href="" class="buy-btn" id="buy-subba-rao" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-subba-rao" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text bullet">• 2nd ARC Report on Ethics in Governance</span></div>
           <div class="book-row"><span class="book-text note">• Practice Case Studies from Vision/ForumIAS compilations</span></div>
@@ -751,14 +764,14 @@
     </div>
 
     <!-- Other Sources -->
-    <div class="section-heading">📰 Other Important Sources</div>
+    <div class="section-heading"><i data-lucide="newspaper"></i> Other Important Sources</div>
     <div class="subject-grid">
       <div class="subject-card">
         <div class="subject-card-header"><h3>Must-Follow Resources</h3></div>
         <div class="subject-card-body">
           <div class="book-row">
             <span class="book-text bullet">• Yojana &amp; Kurukshetra — social, rural, economic issues</span>
-            <a href="" class="buy-btn" id="buy-yojana-mains" style="display:none;">🛒 Buy</a>
+            <a href="" class="buy-btn" id="buy-yojana-mains" style="display:none;"><i data-lucide="shopping-cart"></i> Buy</a>
           </div>
           <div class="book-row"><span class="book-text bullet">• NITI Aayog Reports (Vision Documents, SDG India Index)</span></div>
           <div class="book-row"><span class="book-text bullet">• ARC Reports (2nd ARC — especially Governance &amp; Ethics)</span></div>
@@ -830,7 +843,7 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 GurukulAI. All rights reserved.</p>
-      <p>Made with ❤️ in India, for UPSC Aspirants</p>
+      <p>Made with <i data-lucide="heart"></i> in India, for UPSC Aspirants</p>
     </div>
   </div>
 </footer>
