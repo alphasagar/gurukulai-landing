@@ -1,0 +1,82 @@
+/* Booklist page. Shared chrome lives in site.css. */
+.content-panel{padding:56px 0 24px}
+.content-panel.hidden{display:none}
+
+/* Callout banners */
+.beginner-banner{position:relative;display:flex;gap:22px;align-items:flex-start;padding:30px;border-radius:var(--r-lg);background:linear-gradient(150deg,rgba(255,181,71,.10),var(--ink-2) 55%);box-shadow:inset 0 0 0 1px rgba(255,181,71,.28);margin-bottom:28px;overflow:hidden}
+.beginner-banner.mains{background:linear-gradient(150deg,rgba(242,139,130,.10),var(--ink-2) 55%);box-shadow:inset 0 0 0 1px rgba(242,139,130,.3)}
+.beginner-banner-icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;flex-shrink:0;background:rgba(255,181,71,.14);color:var(--lamp)}
+.beginner-banner.mains .beginner-banner-icon{background:rgba(242,139,130,.14);color:var(--coral)}
+.beginner-banner-icon svg.lucide{width:26px;height:26px}
+.beginner-banner-text h3{font-size:clamp(1.25rem,2.2vw,1.6rem);letter-spacing:-.02em}
+.beginner-banner-text p{color:var(--muted);margin:10px 0 20px;max-width:64ch}
+.beginner-banner-text p strong{color:var(--text);font-weight:600}
+.beginner-banner-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Roadmap: a real sequence, so it's numbered; the line fills on scroll */
+.roadmap-strip{padding:30px;border-radius:var(--r-lg);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line);margin-bottom:28px}
+.roadmap-strip h4{display:flex;align-items:center;gap:10px;font-size:1.15rem;margin-bottom:28px}
+.roadmap-strip h4 svg.lucide{color:var(--lamp)}
+.roadmap-steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.roadmap-line{position:absolute;left:12.5%;right:12.5%;top:19px;height:2px;background:var(--line-2);border-radius:2px;overflow:hidden}
+.roadmap-line i{display:block;height:100%;background:linear-gradient(90deg,var(--lamp),var(--coral));transform-origin:0 50%}
+.roadmap-step{position:relative;text-align:center}
+.roadmap-step-num{width:40px;height:40px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font:700 15px var(--display);background:var(--ink-2);color:var(--dim);box-shadow:inset 0 0 0 1.5px var(--line-2);transition:background .4s,color .4s,box-shadow .4s}
+.roadmap-step.active .roadmap-step-num{background:var(--lamp);color:#1A1205;box-shadow:0 0 0 6px rgba(255,181,71,.14)}
+.roadmap-step-title{font:600 1rem var(--display);color:var(--dim);transition:color .4s}
+.roadmap-step.active .roadmap-step-title{color:var(--text)}
+.roadmap-step-sub{font-size:13.5px;color:var(--muted);margin-top:4px;line-height:1.45}
+html:not(.motion) .roadmap-step .roadmap-step-num{background:var(--lamp);color:#1A1205}
+html:not(.motion) .roadmap-step .roadmap-step-title{color:var(--text)}
+
+.affiliate-notice{display:flex;gap:12px;align-items:flex-start;padding:16px 20px;border-radius:var(--r-md);background:rgba(255,255,255,.03);box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;color:var(--muted);margin-bottom:12px}
+.affiliate-notice svg.lucide{color:var(--lamp);margin-top:3px}
+.affiliate-notice strong{color:var(--text);font-weight:600}
+
+.section-heading{display:flex;align-items:center;gap:12px;font:700 clamp(1.6rem,3.4vw,2.4rem)/1.1 var(--display);letter-spacing:-.03em;margin:72px 0 24px}
+.section-heading svg.lucide{width:.8em;height:.8em;color:var(--lamp)}
+
+/* Subject cards */
+.subject-grid{columns:2;column-gap:14px}
+.subject-card{break-inside:avoid;margin-bottom:14px;border-radius:var(--r-md);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden;transition:box-shadow .3s}
+.subject-card:hover{box-shadow:inset 0 0 0 1px var(--line-2)}
+.subject-card-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 22px 12px}
+.subject-card-header h3{font-size:1.15rem;letter-spacing:-.015em}
+.priority-badge{flex-shrink:0;font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:999px}
+.priority-badge.must{background:rgba(242,139,130,.14);color:var(--coral)}
+.priority-badge.important{background:rgba(255,181,71,.12);color:var(--lamp)}
+.priority-badge.optional{background:rgba(123,216,143,.12);color:var(--leaf)}
+.subject-card-body{padding:4px 22px 20px}
+.book-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}
+.book-row+.book-row{border-top:1px solid var(--line)}
+.book-text{font-size:15px;line-height:1.5;flex:1}
+.book-text.bullet{color:var(--text)}
+.book-text.note{color:var(--muted);font-size:14.5px}
+.book-text.label{font:600 13.5px var(--body);color:var(--lamp);padding-top:10px}
+.buy-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none;color:#FFC266;background:rgba(255,153,0,.10);box-shadow:inset 0 0 0 1px rgba(255,153,0,.3);transition:background .2s,box-shadow .2s;white-space:nowrap}
+.buy-btn:hover{background:rgba(255,153,0,.2);box-shadow:inset 0 0 0 1px rgba(255,153,0,.6)}
+.buy-btn svg.lucide{width:14px;height:14px}
+
+.strategy-card ol,.strategy-card ul{padding-left:20px;display:grid;gap:8px}
+.strategy-card li{font-size:15px;color:var(--muted);padding-left:4px}
+.strategy-card li::marker{color:var(--lamp);font-weight:700}
+.strategy-card li strong{color:var(--text);font-weight:600}
+
+/* Ask Guru inline */
+.ask-guru-card{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:22px 24px;border-radius:var(--r-md);margin-top:16px;background:linear-gradient(120deg,rgba(255,181,71,.10),rgba(242,139,130,.06));box-shadow:inset 0 0 0 1px rgba(255,181,71,.25)}
+.ask-guru-card-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;background:var(--lamp);color:#1A1205}
+.ask-guru-card-icon svg.lucide{width:22px;height:22px}
+.ask-guru-card-text{flex:1;min-width:220px}
+.ask-guru-card-text strong{font:600 1.1rem var(--display)}
+.ask-guru-card-text p{color:var(--muted);font-size:14.5px;margin-top:4px}
+
+@media (max-width:860px){
+  .subject-grid{columns:1}
+  .roadmap-steps{grid-template-columns:1fr 1fr;row-gap:24px}
+  .roadmap-line{display:none}
+  .beginner-banner{flex-direction:column}
+}
+@media (max-width:560px){
+  .beginner-banner,.roadmap-strip{padding:22px}
+  .book-row{align-items:flex-start}
+}

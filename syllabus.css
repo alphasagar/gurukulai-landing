@@ -1,0 +1,71 @@
+/* Syllabus tracker page. Shared chrome lives in site.css. */
+.syllabus-main{padding-top:48px;padding-bottom:40px}
+.content-panel{padding:8px 0 24px}
+.content-panel.hidden{display:none}
+
+/* Progress */
+.progress-widget{display:flex;align-items:center;gap:32px;flex-wrap:wrap;padding:28px 30px;border-radius:var(--r-lg);margin-bottom:24px;background:linear-gradient(150deg,rgba(255,181,71,.10),var(--ink-2) 55%);box-shadow:inset 0 0 0 1px rgba(255,181,71,.25)}
+.progress-info{flex:1;min-width:240px}
+.progress-header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.progress-title{font:600 1.15rem var(--display)}
+.progress-stats-text{font-size:14px;color:var(--muted)}
+.progress-bar-container{height:8px;border-radius:8px;background:rgba(255,255,255,.07);overflow:hidden}
+.progress-bar-fill{height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--lamp),var(--coral));box-shadow:0 0 18px rgba(255,181,71,.6);transition:width .4s cubic-bezier(.2,.8,.2,1)}
+.progress-side{display:flex;align-items:center;gap:16px}
+.progress-percent{font:700 clamp(2.4rem,5vw,3.4rem)/1 var(--display);letter-spacing:-.04em;min-width:3.2ch;text-align:right}
+.reset-btn{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;border-radius:999px;border:0;background:rgba(255,255,255,.05);color:var(--muted);font:600 13.5px var(--body);cursor:pointer;transition:color .2s,background .2s}
+.reset-btn:hover{color:var(--coral);background:rgba(242,139,130,.12)}
+
+/* Search */
+.search-box-wrap{position:relative;margin-bottom:28px}
+.search-box-wrap input{width:100%;height:54px;padding:0 20px 0 50px;border-radius:999px;border:0;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px var(--line-2);color:var(--text);font:500 16px var(--body);outline:none;transition:box-shadow .25s,background .25s}
+.search-box-wrap input::placeholder{color:var(--dim)}
+.search-box-wrap input:focus{box-shadow:inset 0 0 0 1.5px var(--lamp),0 0 0 6px rgba(255,181,71,.10);background:rgba(255,255,255,.06)}
+.search-box-wrap svg.lucide{position:absolute;left:20px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted)}
+
+.empty-search-state{display:none;text-align:center;padding:56px 16px;color:var(--muted)}
+.empty-search-state svg.lucide{display:block;margin:0 auto 14px;width:38px;height:38px;color:var(--lamp)}
+
+.section-heading{display:flex;align-items:center;gap:12px;font:700 clamp(1.5rem,3vw,2.1rem)/1.1 var(--display);letter-spacing:-.03em;margin:56px 0 20px}
+.section-heading:first-child{margin-top:0}
+.section-heading svg.lucide{width:.8em;height:.8em;color:var(--lamp)}
+
+/* Cards and rows */
+.subject-grid{display:grid;gap:16px}
+.subject-card{border-radius:var(--r-md);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.subject-card.hidden{display:none}
+.subject-card-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.subject-card-header h3{font-size:1.2rem;letter-spacing:-.015em}
+.paper-badge{flex-shrink:0;font-size:13px;font-weight:600;padding:4px 12px;border-radius:999px;background:rgba(255,181,71,.12);color:var(--lamp)}
+.subject-card-body{padding:0}
+.syllabus-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 22px;border-bottom:1px solid var(--line);transition:background .2s}
+.syllabus-row:last-child{border-bottom:0}
+.syllabus-row.hidden{display:none}
+.syllabus-row:hover{background:rgba(255,255,255,.025)}
+.syllabus-item-label{display:flex;align-items:flex-start;gap:14px;flex:1;cursor:pointer;font-size:15px;user-select:none}
+.syllabus-item-label input[type="checkbox"]{appearance:none;-webkit-appearance:none;flex-shrink:0;width:20px;height:20px;margin-top:2px;border-radius:6px;box-shadow:inset 0 0 0 1.5px var(--line-2);background:transparent;cursor:pointer;display:grid;place-items:center;transition:background .2s,box-shadow .2s}
+.syllabus-item-label input[type="checkbox"]::after{content:'';width:10px;height:6px;border-left:2px solid #1A1205;border-bottom:2px solid #1A1205;transform:rotate(-45deg) scale(0);margin-top:-2px;transition:transform .2s cubic-bezier(.2,.8,.2,1.4)}
+.syllabus-item-label input[type="checkbox"]:checked{background:var(--lamp);box-shadow:none}
+.syllabus-item-label input[type="checkbox"]:checked::after{transform:rotate(-45deg) scale(1)}
+.syllabus-item-label input[type="checkbox"]:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
+.topic-text{line-height:1.5;transition:color .2s}
+.syllabus-item-label input[type="checkbox"]:checked ~ .topic-text{color:var(--dim);text-decoration:line-through;text-decoration-color:rgba(255,181,71,.6)}
+.guru-ask-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none;color:var(--lamp);background:rgba(255,181,71,.08);box-shadow:inset 0 0 0 1px rgba(255,181,71,.25);transition:background .2s,color .2s;white-space:nowrap}
+.guru-ask-btn:hover{background:var(--lamp);color:#1A1205}
+.guru-ask-btn svg.lucide{width:14px;height:14px}
+
+/* Ask Guru banner */
+.ask-guru-banner{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:24px 26px;border-radius:var(--r-lg);margin-top:40px;background:linear-gradient(120deg,rgba(255,181,71,.10),rgba(242,139,130,.06));box-shadow:inset 0 0 0 1px rgba(255,181,71,.25)}
+.ask-guru-banner-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;background:var(--lamp);color:#1A1205}
+.ask-guru-banner-icon svg.lucide{width:22px;height:22px}
+.ask-guru-banner-text{flex:1;min-width:220px}
+.ask-guru-banner-text strong{display:block;font:600 1.15rem var(--display);margin-bottom:4px}
+.ask-guru-banner-text p{color:var(--muted);font-size:14.5px}
+
+@media (max-width:640px){
+  .progress-widget{padding:22px}
+  .progress-side{width:100%;justify-content:space-between}
+  .subject-card-header{flex-direction:column;align-items:flex-start;gap:8px}
+  .syllabus-row{flex-direction:column;align-items:stretch;gap:10px}
+  .guru-ask-btn{align-self:flex-start;margin-left:34px}
+}

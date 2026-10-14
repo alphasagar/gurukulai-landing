@@ -5,9 +5,12 @@ Static landing/marketing page for GurukulAI.
 ## Structure
 
 ```
-index.html   - Main landing page
-books.html   - Books/materials page
-assets/      - Images, CSS, JS
+index.html     - Main landing page (styles and scripts inline)
+books.html     - Booklist page (+ books.css)
+syllabus.html  - Syllabus tracker (+ syllabus.css)
+privacy.html, terms.html, refund.html, contact.html - Legal pages (+ legal.css)
+site.css       - Shared theme, nav, footer for all sub-pages
+site.js        - Shared nav, smooth scroll (Lenis) and GSAP entrance for sub-pages
 ```
 
 ## Running
