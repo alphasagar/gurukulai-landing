@@ -76,7 +76,15 @@ html:not(.motion) .roadmap-step .roadmap-step-title{color:var(--text)}
   .roadmap-line{display:none}
   .beginner-banner{flex-direction:column}
 }
+.subject-card-body.strategy-card{padding:4px 22px 20px!important}
 @media (max-width:560px){
   .beginner-banner,.roadmap-strip{padding:22px}
   .book-row{align-items:flex-start}
+  .content-panel{padding-top:36px}
+  .section-heading{margin:48px 0 18px}
+  .subject-card-header{padding:16px 18px 10px}
+  .subject-card-body{padding:2px 18px 16px}
+  .book-text{font-size:14.5px}
+  .ask-guru-card{flex-direction:column;align-items:flex-start;gap:14px;padding:22px}
+  .ask-guru-card-text{min-width:0}
 }

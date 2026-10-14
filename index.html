@@ -30,7 +30,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png" />
   <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GurukulAI","applicationCategory":"EducationalApplication","operatingSystem":"Web","description":"AI-powered UPSC preparation platform — beginner roadmap guidance, Mains answer evaluation, and Ask Guru AI mentor.","url":"https://gurukulai.in","offers":[{"@type":"Offer","name":"Free Plan","price":"0","priceCurrency":"INR"},{"@type":"Offer","name":"Basic Plan","price":"199","priceCurrency":"INR"},{"@type":"Offer","name":"Pro Plan","price":"399","priceCurrency":"INR"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"247","bestRating":"5","worstRating":"1"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"I just started UPSC prep. How does GurukulAI help me?","acceptedAnswer":{"@type":"Answer","text":"Ask Guru is available for all plans — ask for a roadmap, book list, or any UPSC concept. PYQ practice is also free. When you start writing Mains answers, the evaluation feature will be ready for you."}},{"@type":"Question","name":"How accurate is the AI evaluation?","acceptedAnswer":{"@type":"Answer","text":"GurukulAI is trained on UPSC marking patterns and GS paper rubrics evaluating introduction, content, structure, and conclusion — same parameters UPSC examiners use."}},{"@type":"Question","name":"Can I upload handwritten answer sheets?","acceptedAnswer":{"@type":"Answer","text":"Yes. Take a clear photo and upload it. AI reads handwriting directly and evaluates in one step."}},{"@type":"Question","name":"Is GurukulAI free to use?","acceptedAnswer":{"@type":"Answer","text":"Ask Guru and PYQ practice are completely free. Answer evaluation free plan gives 10 credits/month. Paid plans start at Rs 199/month."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"I've just started. How does GurukulAI help?","acceptedAnswer":{"@type":"Answer","text":"Ask Guru for a roadmap, a book list or any concept, and practise Prelims PYQs free. Evaluation is ready when you start writing answers."}},{"@type":"Question","name":"How accurate is the evaluation?","acceptedAnswer":{"@type":"Answer","text":"It's built on UPSC marking patterns and GS rubrics: introduction, content, structure, keywords and conclusion. Scores track real UPSC marks closely."}},{"@type":"Question","name":"Can I upload handwritten answers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Take a clear, well-lit photo and upload it. Guru reads your handwriting directly."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Prelims PYQs are free and unlimited. The free plan adds 10 credits a month for Ask Guru and evaluation. Paid plans start at ₹199."}},{"@type":"Question","name":"Which papers and languages?","acceptedAnswer":{"@type":"Answer","text":"GS1 to GS4 in English. Essay and Hindi medium evaluation are coming soon. Ask Guru already answers in Hindi."}},{"@type":"Question","name":"Can I cancel anytime?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your plan runs to the end of the billing period, then moves to Free."}}]}</script>
   <meta name="theme-color" content="#0A0F24" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -195,7 +195,7 @@
     .path-sub{color:var(--muted);margin-top:14px;max-width:40ch}
     .path .btn{margin-top:28px}
     .path ol{list-style:none;display:grid;gap:18px;align-content:start}
-    .path ol li{display:grid;grid-template-columns:40px 1fr;gap:14px}
+    .path ol li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:center}
     .path ol li span{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font:700 15px var(--display);background:rgba(255,255,255,.05);color:var(--c);box-shadow:inset 0 0 0 1px var(--line-2)}
     .path ol b{font:600 1.08rem var(--display);display:block}
     .path ol p{font-size:15px;color:var(--muted);margin-top:2px}
@@ -207,7 +207,7 @@
     .tile:hover::after{opacity:1}
     .tile h3{font-size:1.45rem;letter-spacing:-.02em;line-height:1.15}
     .tile p{color:var(--muted);font-size:15.5px;margin-top:10px;max-width:46ch}
-    .t-guru{grid-column:span 4}.t-pyq{grid-column:span 2}.t-model,.t-score,.t-progress{grid-column:span 2}
+    .t-guru{grid-column:span 4}.t-pyq{grid-column:span 2}.t-model,.t-progress{grid-column:span 3}
     .tile-ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;margin-bottom:20px;background:rgba(255,181,71,.12);color:var(--lamp)}
     .tile-ico svg.lucide{width:22px;height:22px}
     .chat{margin-top:24px;display:grid;gap:10px;max-width:520px}
@@ -263,7 +263,7 @@
     .price small{font:500 1rem var(--body);color:var(--muted);letter-spacing:0}
     .price-sub{font-size:14px;color:var(--muted);margin-top:8px;min-height:22px}
     .price-sub b{color:var(--leaf);font-weight:600}
-    .plan ul{list-style:none;margin:26px 0 30px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:12px;flex:1}
+    .plan ul{list-style:none;margin:26px 0 30px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:12px;flex:1;align-content:start}
     .plan li{display:flex;gap:10px;font-size:15px;color:var(--muted)}
     .plan li svg.lucide{width:18px;height:18px;margin-top:3px}
     .plan li strong{color:var(--text);font-weight:600}
@@ -322,7 +322,7 @@
 
     /* Footer */
     footer{border-top:1px solid var(--line);padding:72px 0 36px}
-    .foot{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:40px}
+    .foot{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:40px}
     .foot p{color:var(--muted);font-size:15px;margin-top:16px;max-width:30ch}
     .foot h4{font:600 14px var(--body);color:var(--text);margin-bottom:16px}
     .foot nav a{display:flex;align-items:center;gap:8px;color:var(--muted);text-decoration:none;font-size:14.5px;padding:5px 0;transition:color .2s}
@@ -343,7 +343,7 @@
       .scene-inner{grid-template-columns:1fr;min-height:0;padding-block:24px 96px}
       .scorecard{position:relative;right:auto;bottom:auto;width:100%;margin-top:-30px;margin-left:auto;max-width:360px}
       .path{grid-template-columns:1fr}
-      .t-guru,.t-pyq,.t-model,.t-score,.t-progress{grid-column:span 6}
+      .t-guru,.t-pyq,.t-model,.t-progress{grid-column:span 6}
       .plans,.voices,.credits,.faq{grid-template-columns:1fr}
       .foot{grid-template-columns:1fr 1fr}
       .foot > div:first-child{grid-column:1/-1}
@@ -356,6 +356,34 @@
     }
     @media (max-width:560px){
       body{font-size:16px}
+      .block{padding:76px 0}
+      .hero{padding:112px 0 56px;min-height:0}
+      .hero h1{margin-top:22px}
+      .hero-row{margin-top:28px;gap:36px}
+      .hero-stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:24px}
+      .stat-n{font-size:1.8rem}
+      .stat-l{font-size:13px;margin-top:6px}
+      .scroll-cue{display:none}
+      .scene-steps{margin-top:24px}
+      .scene-steps li{padding:10px 0 10px 48px}
+      .scene-steps li::before{top:8px}
+      .scene-steps li p{display:none}
+      .paths-pin{padding-block:76px 8px}
+      .paths-track{margin-top:32px;gap:16px}
+      .path{padding:26px 22px;gap:22px}
+      .path ol{gap:14px}
+      .path ol li{align-items:center}
+      .path ol p{display:none}
+      .bento{margin-top:36px}
+      .tile{padding:24px}
+      .model-img{margin:20px -24px -24px}
+      .table-wrap{margin-top:36px}
+      table{min-width:0}
+      th,td{padding:12px 10px;font-size:13.5px;vertical-align:top}
+      td svg.lucide{display:none}
+      .voices{gap:40px;margin-top:36px}
+      .voice blockquote{font-size:1.08rem}
+      .final{padding:96px 0}
       .sheet{padding:22px 14px 24px 48px}
       .sheet-q{margin-right:0}
       .sheet::before{left:36px}
@@ -410,14 +438,14 @@
 <section class="hero">
   <div class="lamp" id="heroLamp" aria-hidden="true"></div>
   <div class="wrap">
-    <a href="#who-is-this-for" class="hero-pill" data-in><b>UPSC 2027</b> Built by an aspirant, calibrated to the new pattern</a>
+    <a href="#who-is-this-for" class="hero-pill" data-in><b>UPSC 2027</b> Built by an aspirant</a>
     <h1>
       <span class="ln"><span data-ln>Your UPSC mentor,</span></span>
       <span class="ln"><span data-ln class="soft">awake at 2 a.m.</span></span>
     </h1>
     <div class="hero-row">
       <div data-in>
-        <p class="hero-sub">Just started? Ask Guru for a roadmap, a book list, or any concept. Writing Mains answers? Get examiner-level feedback in 60 seconds. </p>
+        <p class="hero-sub">Ask Guru anything from day one. Get your Mains answers marked like an examiner would, in 60 seconds.</p>
         <div class="hero-actions">
           <a href="https://app.gurukulai.in/login" class="btn btn-lamp">Start free <i data-lucide="arrow-up-right"></i></a>
           <a href="#evaluate" class="btn btn-ghost">Watch an evaluation</a>
@@ -436,25 +464,21 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-label="What you get">
   <div class="marquee-track">
-    <span><i data-lucide="map"></i>Beginner roadmap and guidance</span>
-    <span><i data-lucide="zap"></i>Mains evaluation in 60 seconds</span>
-    <span><i data-lucide="book-open"></i>Free Prelims PYQ practice</span>
-    <span><i data-lucide="bot"></i>Ask Guru, 24/7</span>
-    <span><i data-lucide="scan-text"></i>Reads handwritten sheets</span>
-    <span><i data-lucide="file-check-2"></i>Model answers on demand</span>
-    <span aria-hidden="true"><i data-lucide="map"></i>Beginner roadmap and guidance</span>
-    <span aria-hidden="true"><i data-lucide="zap"></i>Mains evaluation in 60 seconds</span>
-    <span aria-hidden="true"><i data-lucide="book-open"></i>Free Prelims PYQ practice</span>
-    <span aria-hidden="true"><i data-lucide="bot"></i>Ask Guru, 24/7</span>
-    <span aria-hidden="true"><i data-lucide="scan-text"></i>Reads handwritten sheets</span>
-    <span aria-hidden="true"><i data-lucide="file-check-2"></i>Model answers on demand</span>
+    <span><i data-lucide="map"></i>Roadmaps for beginners</span>
+    <span><i data-lucide="zap"></i>Mains marked in 60 seconds</span>
+    <span><i data-lucide="book-open"></i>Free Prelims PYQs</span>
+    <span><i data-lucide="scan-text"></i>Reads handwriting</span>
+    <span aria-hidden="true"><i data-lucide="map"></i>Roadmaps for beginners</span>
+    <span aria-hidden="true"><i data-lucide="zap"></i>Mains marked in 60 seconds</span>
+    <span aria-hidden="true"><i data-lucide="book-open"></i>Free Prelims PYQs</span>
+    <span aria-hidden="true"><i data-lucide="scan-text"></i>Reads handwriting</span>
   </div>
 </div>
 
 <!-- STATEMENT -->
 <section class="block statement">
   <div class="wrap">
-    <p id="statement">Coaching feedback takes three weeks and costs lakhs. ChatGPT doesn't know how a UPSC examiner reads. <span class="hot">GurukulAI does, and it answers in under a minute.</span></p>
+    <p id="statement">Coaching takes weeks. Chatbots don't know how UPSC marks. <span class="hot">GurukulAI does, in under a minute.</span></p>
   </div>
 </section>
 
@@ -464,10 +488,10 @@
     <div class="scene-copy">
       <h2 class="h2">From handwritten sheet to marks in 48 seconds</h2>
       <ol class="scene-steps" id="sceneSteps">
-        <li class="on"><b>Upload your answer</b><p>Photograph your handwritten sheet or paste typed text. Pick GS1, GS2, GS3 or GS4.</p></li>
-        <li><b>Guru reads it</b><p>Handwriting is read directly, in one step. No separate OCR, no retyping.</p></li>
-        <li><b>The examiner's pen</b><p>Missed dimensions are named, strong keywords noted, weak spots marked in the margin.</p></li>
-        <li><b>Your score, broken down</b><p>Introduction, content, structure and conclusion, each scored the way UPSC marks them.</p></li>
+        <li class="on"><b>Upload a photo or typed answer</b></li>
+        <li><b>Guru reads your handwriting</b></li>
+        <li><b>Weak spots marked in the margin</b></li>
+        <li><b>Scored the way UPSC marks</b></li>
       </ol>
     </div>
 
@@ -518,7 +542,6 @@
     <div class="wrap paths-head">
       <div>
         <h2 class="h2">Start wherever you are</h2>
-        <p class="lede">Whether you heard about UPSC last week or Mains is three months away, there's a clear path for you here.</p>
       </div>
       <div class="paths-progress" aria-hidden="true"><i id="pathsBar"></i></div>
     </div>
@@ -527,39 +550,39 @@
         <div>
           <span class="path-tag"><i data-lucide="sprout"></i>Just starting out</span>
           <h3>Not sure where to begin?</h3>
-          <p class="path-sub">Confused about books, the syllabus, or whether you need coaching? Ask Guru is your mentor around the clock.</p>
+          <p class="path-sub">Ask Guru for a roadmap, a book list or any concept.</p>
           <a href="https://app.gurukulai.in/gurukulai-chat" class="btn btn-lamp">Ask Guru anything</a>
         </div>
         <ol>
-          <li><span>1</span><div><b>Sign up free</b><p>30 seconds, no card. You get 10 free credits and Ask Guru access.</p></div></li>
-          <li><span>2</span><div><b>Ask anything</b><p>"Give me a beginner roadmap." "Which books for History?" "How many hours a day?"</p></div></li>
-          <li><span>3</span><div><b>Build the habit</b><p>Clear doubts daily, practise free PYQs. Evaluation is ready when you start writing.</p></div></li>
+          <li><span>1</span><div><b>Sign up free, no card</b></div></li>
+          <li><span>2</span><div><b>Get your roadmap</b></div></li>
+          <li><span>3</span><div><b>Clear doubts daily</b></div></li>
         </ol>
       </article>
       <article class="path" style="--c:var(--leaf)">
         <div>
           <span class="path-tag"><i data-lucide="book-open"></i>Preparing for Prelims</span>
           <h3>Practise every PYQ, free</h3>
-          <p class="path-sub">Unlimited previous-year questions, subject-wise and year-wise, with explanations. No credits, no subscription, ever.</p>
+          <p class="path-sub">Every past question, with explanations. No credits, ever.</p>
           <a href="https://app.gurukulai.in/practice" class="btn btn-lamp">Start PYQ practice</a>
         </div>
         <ol>
-          <li><span>1</span><div><b>Sign up free</b><p>Prelims PYQ practice never needs credits or a plan.</p></div></li>
-          <li><span>2</span><div><b>Practise daily</b><p>Filter by year, subject and topic. Accuracy is tracked and weak topics surface on their own.</p></div></li>
-          <li><span>3</span><div><b>Clear doubts with Guru</b><p>Stuck on a concept? Get a UPSC-format explanation with exam-relevant context.</p></div></li>
+          <li><span>1</span><div><b>Filter by year or subject</b></div></li>
+          <li><span>2</span><div><b>Solve with explanations</b></div></li>
+          <li><span>3</span><div><b>Fix your weak topics</b></div></li>
         </ol>
       </article>
       <article class="path" style="--c:var(--coral)">
         <div>
           <span class="path-tag"><i data-lucide="pen-line"></i>Writing Mains answers</span>
-          <h3>Stop waiting ten days for feedback</h3>
-          <p class="path-sub">Examiner-level feedback on every answer, GS1 to GS4, with a model answer to compare against.</p>
+          <h3>Feedback in a minute, not ten days</h3>
+          <p class="path-sub">GS1 to GS4, with a model answer to compare against.</p>
           <a href="https://app.gurukulai.in/evaluate" class="btn btn-lamp">Evaluate my answer</a>
         </div>
         <ol>
-          <li><span>1</span><div><b>Upload your answer</b><p>Photo of a handwritten sheet or typed text. Choose the paper and word limit.</p></div></li>
-          <li><span>2</span><div><b>Evaluated in 60 seconds</b><p>Section scores, missed dimensions named, and an examiner's comment.</p></div></li>
-          <li><span>3</span><div><b>Study the model answer</b><p>See how a topper would write it, side by side with yours, and track progress over weeks.</p></div></li>
+          <li><span>1</span><div><b>Upload your answer</b></div></li>
+          <li><span>2</span><div><b>Get section-wise marks</b></div></li>
+          <li><span>3</span><div><b>Study the model answer</b></div></li>
         </ol>
       </article>
     </div>
@@ -569,13 +592,12 @@
 <!-- FEATURES -->
 <section class="block" id="features">
   <div class="wrap">
-    <h2 class="h2">One platform for the whole journey</h2>
-    <p class="lede">From day-one questions to polishing Mains answers, everything lives in one place.</p>
+    <h2 class="h2">Everything in one place</h2>
     <div class="bento">
       <div class="tile t-guru">
         <div class="tile-ico"><i data-lucide="bot"></i></div>
         <h3>Ask Guru, your AI mentor</h3>
-        <p>Ask any UPSC question and get a structured, UPSC-format answer instantly. Available on every plan, in English and Hindi.</p>
+        <p>Any UPSC question, answered in UPSC format. In English and Hindi.</p>
         <div class="chat" aria-hidden="true">
           <div class="bub me">Which books should I start with for GS2?</div>
           <div class="bub guru">Start with these, in order:
@@ -586,7 +608,7 @@
       <div class="tile t-pyq">
         <div class="tile-ico" style="background:rgba(123,216,143,.12);color:var(--leaf)"><i data-lucide="list-checks"></i></div>
         <h3>Free Prelims PYQs</h3>
-        <p>Thousands of past questions, filtered by year, subject and difficulty.</p>
+        <p>By year, subject and difficulty.</p>
         <div class="mcq" aria-hidden="true">
           <div>Article 32</div>
           <div class="right">Article 243G <i data-lucide="check"></i></div>
@@ -596,23 +618,13 @@
       <div class="tile t-model">
         <div class="tile-ico"><i data-lucide="file-check-2"></i></div>
         <h3>Model answers</h3>
-        <p>See how a topper would answer the same question. On Basic and Pro.</p>
+        <p>See how a topper would write it.</p>
         <figure class="model-img"><img src="shakti-dubey-answer.jpg.jpg" alt="Handwritten GS answer sheet by Shakti Dubey, AIR 1, UPSC CSE 2024" loading="lazy" /><figcaption>Shakti Dubey, AIR 1, CSE 2024</figcaption></figure>
-      </div>
-      <div class="tile t-score">
-        <div class="tile-ico" style="background:rgba(242,139,130,.12);color:var(--coral)"><i data-lucide="gauge"></i></div>
-        <h3>Score estimation</h3>
-        <p>Your likely UPSC marks, section by section, so you know exactly what to fix.</p>
-        <div class="rings" aria-hidden="true">
-          <div><div class="ring" style="--c:var(--leaf)" data-p="67"><span>2/3</span></div><div class="ring-l">Intro</div></div>
-          <div><div class="ring" style="--c:var(--lamp)" data-p="57"><span>4/7</span></div><div class="ring-l">Content</div></div>
-          <div><div class="ring" style="--c:var(--coral)" data-p="50"><span>1/2</span></div><div class="ring-l">End</div></div>
-        </div>
       </div>
       <div class="tile t-progress">
         <div class="tile-ico" style="background:rgba(159,177,255,.12);color:#9FB1FF"><i data-lucide="trending-up"></i></div>
         <h3>Progress tracking</h3>
-        <p>See which GS papers are getting stronger and how your scores move week to week.</p>
+        <p>Watch every GS paper improve, week by week.</p>
         <svg class="spark" viewBox="0 0 300 96" preserveAspectRatio="none" aria-hidden="true">
           <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB547" stop-opacity=".35"/><stop offset="1" stop-color="#FFB547" stop-opacity="0"/></linearGradient></defs>
           <path d="M0 80 L40 72 L80 76 L120 58 L160 62 L200 40 L240 34 L300 14 L300 96 L0 96Z" fill="url(#sg)"/>
@@ -626,20 +638,16 @@
 <!-- COMPARE -->
 <section class="block" id="compare" style="padding-top:0">
   <div class="wrap">
-    <h2 class="h2">Built for UPSC, priced for aspirants</h2>
-    <p class="lede">Coaching costs ₹1 to 3 lakh and takes weeks to return feedback. General chatbots aren't built for UPSC marking.</p>
+    <h2 class="h2">How we compare</h2>
     <div class="table-wrap">
       <table>
         <thead><tr><th style="width:28%">Feature</th><th class="us">GurukulAI</th><th>Coaching institute</th><th>ChatGPT / Gemini</th></tr></thead>
         <tbody>
-          <tr><td>Beginner guidance</td><td class="us"><i data-lucide="check" class="yes"></i>Ask Guru</td><td>Class content only</td><td><i data-lucide="minus" class="meh"></i>Generic</td></tr>
-          <tr><td>Evaluation speed</td><td class="us"><i data-lucide="zap" class="yes"></i>Under 60 seconds</td><td>2 to 4 weeks</td><td>30 to 60 seconds</td></tr>
-          <tr><td>UPSC-specific scoring</td><td class="us"><i data-lucide="check" class="yes"></i>Calibrated</td><td><i data-lucide="minus" class="meh"></i>Varies by teacher</td><td><i data-lucide="x" class="no"></i>Generic</td></tr>
-          <tr><td>Model answers</td><td class="us"><i data-lucide="check" class="yes"></i>Every evaluation</td><td>Sometimes</td><td><i data-lucide="minus" class="meh"></i>Not reliable</td></tr>
-          <tr><td>Hindi medium</td><td class="us"><i data-lucide="check" class="yes"></i>Coming soon (beta)</td><td>Varies</td><td><i data-lucide="minus" class="meh"></i>Not UPSC-standard</td></tr>
-          <tr><td>Available 24/7</td><td class="us"><i data-lucide="check" class="yes"></i>Yes</td><td><i data-lucide="x" class="no"></i>Class schedule</td><td><i data-lucide="check" class="yes"></i>Yes</td></tr>
-          <tr><td>Prelims PYQ practice</td><td class="us"><i data-lucide="check" class="yes"></i>Built in, free</td><td>Separate material</td><td><i data-lucide="x" class="no"></i>No</td></tr>
-          <tr><td>Progress tracking</td><td class="us"><i data-lucide="check" class="yes"></i>Automatic</td><td>Manual, if any</td><td><i data-lucide="x" class="no"></i>No</td></tr>
+          <tr><td>Evaluation speed</td><td class="us"><i data-lucide="zap" class="yes"></i>Under 60 seconds</td><td>2 to 4 weeks</td><td>Fast, but generic</td></tr>
+          <tr><td>UPSC-style marking</td><td class="us"><i data-lucide="check" class="yes"></i>Calibrated</td><td><i data-lucide="minus" class="meh"></i>Varies by teacher</td><td><i data-lucide="x" class="no"></i>No</td></tr>
+          <tr><td>Model answers</td><td class="us"><i data-lucide="check" class="yes"></i>Every evaluation</td><td>Sometimes</td><td><i data-lucide="minus" class="meh"></i>Unreliable</td></tr>
+          <tr><td>Prelims PYQs</td><td class="us"><i data-lucide="check" class="yes"></i>Built in, free</td><td>Separate material</td><td><i data-lucide="x" class="no"></i>No</td></tr>
+          <tr><td>Available 24/7</td><td class="us"><i data-lucide="check" class="yes"></i>Yes</td><td><i data-lucide="x" class="no"></i>Class hours</td><td><i data-lucide="check" class="yes"></i>Yes</td></tr>
           <tr><td>Monthly cost</td><td class="us" style="color:var(--leaf)!important">₹0 to ₹399</td><td>₹8,000 to ₹25,000</td><td>₹0 to ₹1,700</td></tr>
         </tbody>
       </table>
@@ -650,8 +658,7 @@
 <!-- PRICING -->
 <section class="block" id="pricing" style="padding-top:0">
   <div class="wrap">
-    <h2 class="h2">Simple, honest pricing</h2>
-    <p class="lede">Start free and upgrade when you're ready. Ask Guru is on every plan.</p>
+    <h2 class="h2">Pricing</h2>
     <div class="toggle" role="group" aria-label="Billing period">
       <button type="button" id="billMonthly" aria-pressed="true">Monthly</button>
       <button type="button" id="billYearly" aria-pressed="false">Yearly<em>save 25%+</em></button>
@@ -664,11 +671,9 @@
         <div class="price-sub">No card required</div>
         <ul>
           <li><i data-lucide="check" class="yes"></i><span><strong>10 credits</strong> a month</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Ask Guru, limited</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Prelims PYQs, <strong>free forever</strong></span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Evaluation history, last 7 days</span></li>
-          <li><i data-lucide="x" class="no"></i><span>Model answers</span></li>
-          <li><i data-lucide="x" class="no"></i><span>PDF report download</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>Ask Guru</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>Free Prelims PYQs</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>7-day history</span></li>
         </ul>
         <a href="https://app.gurukulai.in/login" class="btn btn-ghost">Get started free</a>
       </div>
@@ -680,12 +685,10 @@
         <div class="price-sub" id="basicSub">or ₹1,799 a year, <b>save ₹589</b></div>
         <ul>
           <li><i data-lucide="check" class="yes"></i><span><strong>100 credits</strong> a month</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Ask Guru, 100 doubts</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Model answers included</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>History, last 60 days</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>Model answers</span></li>
           <li><i data-lucide="check" class="yes"></i><span>Progress tracking</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>PDF report download</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Email support</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>PDF reports</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>60-day history</span></li>
         </ul>
         <a href="https://app.gurukulai.in/login" class="btn btn-lamp">Start Practitioner</a>
       </div>
@@ -696,12 +699,10 @@
         <div class="price-sub" id="proSub">or ₹3,499 a year, <b>save ₹1,289</b></div>
         <ul>
           <li><i data-lucide="check" class="yes"></i><span><strong>300 credits</strong> a month</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Ask Guru, 300 doubts</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Model answers included</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Full history, forever</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>Everything in Basic</span></li>
           <li><i data-lucide="check" class="yes"></i><span>Advanced progress graphs</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>PDF report download</span></li>
-          <li><i data-lucide="check" class="yes"></i><span>Priority email support (24 hr)</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>Full history</span></li>
+          <li><i data-lucide="check" class="yes"></i><span>Priority support (24 hr)</span></li>
         </ul>
         <a href="https://app.gurukulai.in/login" class="btn btn-ghost">Go Pro</a>
       </div>
@@ -712,18 +713,18 @@
 <!-- CREDITS -->
 <section class="block" id="credits" style="padding-top:0">
   <div class="wrap">
-    <h2 class="h2">How credits work</h2>
-    <p class="lede">PYQ practice is always free. Credits are spent on Ask Guru and answer evaluation.</p>
+    <h2 class="h2">Credits</h2>
+    <p class="lede">PYQs are free. Ask Guru and evaluations use credits.</p>
     <div class="credits">
       <ul class="cost-list">
-        <li><div><b><i data-lucide="bot"></i>Ask Guru</b><small>Available on all plans</small></div><span class="chip">1 credit</span></li>
-        <li><div><b><i data-lucide="book-open"></i>Prelims PYQ practice</b><small>Unlimited, with explanations</small></div><span class="chip free">Free</span></li>
-        <li><div><b><i data-lucide="zap"></i>Single answer evaluation</b><small>Typed or handwritten</small></div><span class="chip">1 credit</span></li>
-        <li><div><b><i data-lucide="layers"></i>Multiple evaluation</b><small>Per answer in the set</small></div><span class="chip">1–5 credits</span></li>
-        <li><div><b><i data-lucide="file-text"></i>Full paper evaluation</b><small>Up to 20 answers</small></div><span class="chip">15 credits</span></li>
+        <li><div><b><i data-lucide="bot"></i>Ask Guru, per question</b></div><span class="chip">1 credit</span></li>
+        <li><div><b><i data-lucide="book-open"></i>Prelims PYQ practice</b></div><span class="chip free">Free</span></li>
+        <li><div><b><i data-lucide="zap"></i>One answer</b></div><span class="chip">1 credit</span></li>
+        <li><div><b><i data-lucide="layers"></i>A set of answers</b><small>Per answer</small></div><span class="chip">1–5 credits</span></li>
+        <li><div><b><i data-lucide="file-text"></i>Full paper</b><small>Up to 20 answers</small></div><span class="chip">15 credits</span></li>
       </ul>
       <div>
-        <p class="packs-note">Run out mid-month? Top up on Basic and above. Add-on credits never expire.</p>
+        <p class="packs-note">Top-ups for Basic and Pro. They never expire.</p>
         <div class="packs">
           <a class="pack" href="https://app.gurukulai.in/login"><div class="pack-top">Small</div><div class="pack-n">10 <small>credits</small></div><div class="pack-p">₹79 <span>· ₹7.9 each</span></div></a>
           <a class="pack" href="https://app.gurukulai.in/login"><div class="pack-top">Standard</div><div class="pack-n">30 <small>credits</small></div><div class="pack-p">₹199 <span>· ₹6.6 each</span></div></a>
@@ -738,11 +739,11 @@
 <!-- VOICES -->
 <section class="block" style="padding-top:0">
   <div class="wrap">
-    <h2 class="h2">Aspirants at every stage</h2>
+    <h2 class="h2">From aspirants</h2>
     <div class="voices">
-      <figure class="voice"><div class="stars" aria-label="5 out of 5">★★★★★</div><blockquote>I had no idea where to begin. I asked Guru for a complete roadmap and got the most structured answer I've seen, better than any YouTube video.</blockquote><figcaption><b>Ananya R.</b>First-time aspirant, Hyderabad</figcaption></figure>
-      <figure class="voice"><div class="stars" aria-label="5 out of 5">★★★★★</div><blockquote>I used to wait three weeks for my coaching teacher's feedback. Now I get detailed, specific feedback in under a minute. My answers improved in two weeks.</blockquote><figcaption><b>Rahul S.</b>CSE 2026 aspirant, Delhi</figcaption></figure>
-      <figure class="voice"><div class="stars" aria-label="4 out of 5">★★★★☆</div><blockquote>The scoring breakdown is surprisingly accurate. It caught my habit of writing vague conclusions and told me exactly how to fix it.</blockquote><figcaption><b>Priya M.</b>Second attempt, Pune</figcaption></figure>
+      <figure class="voice"><div class="stars" aria-label="5 out of 5">★★★★★</div><blockquote>I asked Guru for a roadmap and got the most structured answer I've seen. Better than any YouTube video.</blockquote><figcaption><b>Ananya R.</b>First-time aspirant, Hyderabad</figcaption></figure>
+      <figure class="voice"><div class="stars" aria-label="5 out of 5">★★★★★</div><blockquote>I used to wait three weeks for feedback. Now it takes a minute, and my answers improved in two weeks.</blockquote><figcaption><b>Rahul S.</b>CSE 2026 aspirant, Delhi</figcaption></figure>
+      <figure class="voice"><div class="stars" aria-label="4 out of 5">★★★★☆</div><blockquote>It caught my habit of vague conclusions and showed me exactly how to fix it.</blockquote><figcaption><b>Priya M.</b>Second attempt, Pune</figcaption></figure>
     </div>
   </div>
 </section>
@@ -751,18 +752,16 @@
 <section class="block" id="faq" style="padding-top:0">
   <div class="wrap faq">
     <div>
-      <h2 class="h2">Questions, answered</h2>
-      <p class="lede">Anything else? Write to <a href="mailto:gurukulxai@gmail.com" style="color:var(--lamp)">gurukulxai@gmail.com</a>.</p>
+      <h2 class="h2">FAQ</h2>
+      <p class="lede">More questions? <a href="mailto:gurukulxai@gmail.com" style="color:var(--lamp)">gurukulxai@gmail.com</a>.</p>
     </div>
     <div>
-      <details><summary><span class="stage">Beginner</span>I just started UPSC prep. How does GurukulAI help me?</summary><div class="a">Start with Ask Guru, our AI mentor. Ask anything: "Give me a UPSC beginner roadmap", "Which books should I start with?", "How many hours should I study daily?", "Explain the UPSC syllabus". You can also practise Prelims PYQs free, without a subscription. When you start writing Mains answers, usually 6 to 12 months in, evaluation is ready for you.</div></details>
-      <details><summary><span class="stage">Beginner</span>I don't have a written answer yet. Can I still use GurukulAI?</summary><div class="a">Yes. Ask Guru and Prelims PYQ practice don't need a written answer. When you're ready to write, even 5 or 6 lines, evaluation is there. You can also tap "Practice Question" on the evaluation page to get a beginner-friendly question to attempt.</div></details>
-      <details><summary><span class="stage m">Mains</span>How accurate is the AI evaluation?</summary><div class="a">GurukulAI is trained on UPSC marking patterns and GS paper rubrics. It evaluates introduction quality, content depth, structure, keyword use and conclusion, the same parameters UPSC examiners use. Our scores track real UPSC marks closely across hundreds of tested answers.</div></details>
-      <details><summary><span class="stage m">Mains</span>Can I upload handwritten answer sheets?</summary><div class="a">Yes. Take a clear photo of your handwritten answer and upload it. The AI reads your handwriting directly and evaluates in one step. For best results, use good light and legible writing.</div></details>
-      <details><summary>Is GurukulAI free to use?</summary><div class="a">Prelims PYQ practice is completely free and unlimited. For Ask Guru and answer evaluation, the free plan gives 10 credits a month. Paid plans start at ₹199 a month for 100 credits. You never need a card to practise PYQs.</div></details>
-      <details><summary>Does it support Hindi medium answers?</summary><div class="a">Hindi medium evaluation is in development and will launch as a beta soon. Ask Guru already supports Hindi questions. We're calibrating rubrics to Hindi medium UPSC standards before releasing full evaluation.</div></details>
-      <details><summary>Which UPSC papers are covered?</summary><div class="a">GS Paper 1, 2, 3 and 4, each with its own rubric calibrated to UPSC standards. Essay evaluation is coming soon. Ask Guru covers all papers plus optional subjects and current affairs.</div></details>
-      <details><summary>Can I cancel my subscription anytime?</summary><div class="a">Yes. Your subscription stays active until the end of the billing period, then you move to the Free plan, where PYQ practice stays free.</div></details>
+      <details><summary>I've just started. How does GurukulAI help?</summary><div class="a">Ask Guru for a roadmap, a book list or any concept, and practise Prelims PYQs free. Evaluation is ready when you start writing answers.</div></details>
+      <details><summary>How accurate is the evaluation?</summary><div class="a">It's built on UPSC marking patterns and GS rubrics: introduction, content, structure, keywords and conclusion. Scores track real UPSC marks closely.</div></details>
+      <details><summary>Can I upload handwritten answers?</summary><div class="a">Yes. Take a clear, well-lit photo and upload it. Guru reads your handwriting directly.</div></details>
+      <details><summary>Is it free?</summary><div class="a">Prelims PYQs are free and unlimited. The free plan adds 10 credits a month for Ask Guru and evaluation. Paid plans start at ₹199.</div></details>
+      <details><summary>Which papers and languages?</summary><div class="a">GS1 to GS4 in English. Essay and Hindi medium evaluation are coming soon. Ask Guru already answers in Hindi.</div></details>
+      <details><summary>Can I cancel anytime?</summary><div class="a">Yes. Your plan runs to the end of the billing period, then moves to Free.</div></details>
     </div>
   </div>
 </section>
@@ -772,15 +771,10 @@
   <div class="lamp" aria-hidden="true"></div>
   <div class="wrap">
     <h2 id="finalHead">Write tonight. Know where you stand in a minute.</h2>
-    <p>Beginner or Mains, every aspirant gets the tools coaching charges lakhs for. Free to start.</p>
+    <p>Free to start. No card needed.</p>
     <div class="hero-actions">
       <a href="https://app.gurukulai.in/login" class="btn btn-lamp">Start free <i data-lucide="arrow-up-right"></i></a>
       <a href="#pricing" class="btn btn-ghost">View plans</a>
-    </div>
-    <div class="quick">
-      <a href="https://app.gurukulai.in/gurukulai-chat"><i data-lucide="sprout"></i>I'm a beginner: ask Guru</a>
-      <a href="https://app.gurukulai.in/practice"><i data-lucide="book-open"></i>Prelims: practise PYQs free</a>
-      <a href="https://app.gurukulai.in/evaluate"><i data-lucide="pen-line"></i>Mains: evaluate an answer</a>
     </div>
   </div>
 </section>
@@ -801,7 +795,6 @@
       </div>
       <div><h4>Product</h4><nav aria-label="Product"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#how-it-works">How it works</a><a href="#compare">Compare</a><a href="#credits">Credits</a></nav></div>
       <div><h4>Resources</h4><nav aria-label="Resources"><a href="/books.html">Recommended books</a><a href="/syllabus.html">UPSC syllabus</a><a href="https://app.gurukulai.in/practice">Prelims PYQ</a><a href="https://app.gurukulai.in/gurukulai-chat">Ask Guru</a><a href="https://app.gurukulai.in/evaluate">Evaluate an answer</a><a href="https://app.gurukulai.in/progress">Progress</a></nav></div>
-      <div><h4>Start your path</h4><nav aria-label="Paths"><a href="https://app.gurukulai.in/gurukulai-chat"><i data-lucide="sprout"></i>I'm a beginner</a><a href="https://app.gurukulai.in/practice"><i data-lucide="book-open"></i>Prelims practice</a><a href="https://app.gurukulai.in/evaluate"><i data-lucide="pen-line"></i>Mains evaluation</a></nav></div>
       <div><h4>Support</h4><nav aria-label="Support"><a href="mailto:gurukulxai@gmail.com">gurukulxai@gmail.com</a><a href="#faq">FAQ</a><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms &amp; conditions</a><a href="/refund.html">Refund &amp; cancellation</a><a href="/contact.html">Contact us</a></nav></div>
     </div>
     <div class="foot-bottom"><span>© 2026 GurukulAI. All rights reserved.</span><span>Made in India, for every UPSC aspirant</span></div>
@@ -964,7 +957,7 @@
   mm.add('(max-width: 980px)', () => buildScene(false));
 
   // Bento details animate once when seen (responds to arrival, not decoration)
-  ScrollTrigger.create({ trigger: '.t-score', start: 'top 80%', once: true, onEnter: () => {
+  if ($('.t-score')) ScrollTrigger.create({ trigger: '.t-score', start: 'top 80%', once: true, onEnter: () => {
     $$('.ring').forEach(r => gsap.fromTo(r, { '--p': 0 }, { '--p': +r.dataset.p, duration: 1.4, ease: 'power3.out' }));
   }});
   const spark = $('#sparkLine'), len = spark.getTotalLength();

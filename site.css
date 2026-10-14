@@ -102,7 +102,7 @@ html.js.motion:not(.ready) [data-ln],html.js.motion:not(.ready) [data-in]{opacit
 
 /* Footer */
 footer{border-top:1px solid var(--line);padding:72px 0 36px}
-.foot{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:40px}
+.foot{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:40px}
 .foot p{color:var(--muted);font-size:15px;margin-top:16px;max-width:30ch}
 .foot h4{font:600 14px var(--body);color:var(--text);margin-bottom:16px;letter-spacing:0}
 .foot nav a{display:flex;align-items:center;gap:8px;color:var(--muted);text-decoration:none;font-size:14.5px;padding:5px 0;transition:color .2s}
@@ -122,4 +122,10 @@ footer{border-top:1px solid var(--line);padding:72px 0 36px}
 }
 @media (max-width:560px){
   .tab-btn{padding:0 16px;font-size:14px}
+  .sub-hero{padding:calc(var(--nav-h) + 40px) 0 40px}
+  .sub-hero h1{margin-top:16px}
+  .sub-hero .lede{margin-top:18px}
+  .cta-band{padding:88px 0}
+  footer{padding:56px 0 28px}
+  .foot{gap:32px}
 }

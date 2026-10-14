@@ -65,7 +65,14 @@
 @media (max-width:640px){
   .progress-widget{padding:22px}
   .progress-side{width:100%;justify-content:space-between}
+  .progress-percent{text-align:left;min-width:0}
   .subject-card-header{flex-direction:column;align-items:flex-start;gap:8px}
-  .syllabus-row{flex-direction:column;align-items:stretch;gap:10px}
-  .guru-ask-btn{align-self:flex-start;margin-left:34px}
+  .syllabus-row{padding:12px 16px 12px 18px;gap:10px}
+  .syllabus-item-label{font-size:14.5px}
+  /* Icon-only Ask Guru on phones; the hidden label stays the accessible name */
+  .guru-ask-btn{font-size:0;gap:0;width:38px;height:38px;padding:0;justify-content:center;flex-shrink:0}
+  .guru-ask-btn svg.lucide{width:17px;height:17px}
+  .ask-guru-banner{flex-direction:column;align-items:flex-start;gap:14px;padding:22px}
+  .ask-guru-banner-text{min-width:0}
+  .syllabus-main{padding-top:32px}
 }
