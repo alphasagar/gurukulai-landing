@@ -231,6 +231,24 @@
     .ring-l{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
     .spark{margin-top:22px;width:100%;height:96px}
     .spark path.line{fill:none;stroke:var(--lamp);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+    /* Current affairs */
+    .ca{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,5vw,72px);align-items:center}
+    .ca .chip{display:inline-block;margin-bottom:18px}
+    .ca-list{list-style:none;margin-top:28px;display:grid;gap:14px}
+    .ca-list li{display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:15.5px}
+    .ca-list li b{color:var(--text);font-weight:600}
+    .ca-list svg.lucide{flex-shrink:0;width:20px;height:20px;margin-top:2px;color:var(--lamp)}
+    .ca .btn{margin-top:32px}
+    .ca-src{margin-top:16px;font-size:13px;color:var(--dim)}
+    .ca-feed{display:grid;gap:12px}
+    .ca-card{border-radius:var(--r-md);padding:20px 22px;background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+    .ca-card.lead{box-shadow:inset 0 0 0 1px var(--line-2),0 30px 80px -40px rgba(255,181,71,.35)}
+    .ca-eyebrow{font:600 11.5px var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--lamp)}
+    .ca-card h3{margin-top:6px;font-size:1.12rem;line-height:1.3;letter-spacing:-.01em}
+    .ca-card .ca-sum{margin-top:8px;color:var(--muted);font-size:14.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    .ca-meta{margin-top:12px;font-size:12.5px;color:var(--dim)}
+    .ca-card .mcq{margin-top:16px}
+    .ca-q{margin-top:16px;font-size:14px;color:var(--text);font-weight:500}
 
     /* Compare */
     .table-wrap{margin-top:56px;border-radius:var(--r-lg);box-shadow:inset 0 0 0 1px var(--line);overflow-x:auto;background:rgba(16,23,58,.4)}
@@ -345,6 +363,7 @@
       .scorecard{position:relative;right:auto;bottom:auto;width:100%;margin-top:-30px;margin-left:auto;max-width:360px}
       .path{grid-template-columns:1fr}
       .t-guru,.t-pyq,.t-model,.t-progress{grid-column:span 6}
+      .ca{grid-template-columns:minmax(0,1fr)}
       .plans,.voices,.credits,.faq{grid-template-columns:1fr}
       .foot{grid-template-columns:1fr 1fr}
       .foot > div:first-child{grid-column:1/-1}
@@ -635,6 +654,50 @@
           <path class="line" id="sparkLine" d="M0 80 L40 72 L80 76 L120 58 L160 62 L200 40 L240 34 L300 14"/>
         </svg>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT AFFAIRS -->
+<section class="block" id="current-affairs" style="padding-top:0">
+  <div class="wrap ca">
+    <div>
+      <span class="chip">New · Free</span>
+      <h2 class="h2">Today's news, the UPSC cut.</h2>
+      <p class="lede">Every government release is read for you. Only what matters for the exam is kept, as short notes with a quick quiz.</p>
+      <ul class="ca-list">
+        <li><i data-lucide="newspaper"></i><span><b>Updated through the day,</b> straight from the Press Information Bureau</span></li>
+        <li><i data-lucide="tags"></i><span><b>Tagged by GS paper and topic,</b> so you know where each story fits</span></li>
+        <li><i data-lucide="list-checks"></i><span><b>Prelims facts, a Mains angle and two MCQs</b> with every story</span></li>
+        <li><i data-lucide="bot"></i><span><b>Ask Guru</b> to explain any story and link it to the syllabus</span></li>
+      </ul>
+      <a href="https://app.gurukulai.in/current-affairs" class="btn btn-lamp">Read today's current affairs <i data-lucide="arrow-up-right"></i></a>
+      <p class="ca-src">Source: Press Information Bureau (pib.gov.in). Notes are AI-written and link to the original release.</p>
+    </div>
+
+    <div class="ca-feed" id="caFeed">
+      <article class="ca-card lead">
+        <div class="ca-eyebrow">GS2 · International Relations – Bilateral trade agreements</div>
+        <h3>India–New Zealand FTA comes into force on 20 October 2026</h3>
+        <p class="ca-sum">New Zealand gives duty-free access to all Indian exports, with a quota of 5,000 temporary work visas for Indian professionals and an agricultural productivity partnership.</p>
+        <p class="ca-q">Under the FTA, New Zealand offers Indian exports:</p>
+        <div class="mcq" aria-hidden="true">
+          <div>Duty-free access on 70% of tariff lines</div>
+          <div class="right">Duty-free access on all tariff lines <i data-lucide="check"></i></div>
+          <div>Reduced duties on agriculture only</div>
+        </div>
+        <div class="ca-meta">PIB · Ministry of Commerce &amp; Industry</div>
+      </article>
+      <article class="ca-card">
+        <div class="ca-eyebrow">GS3 · Security – Defence cooperation</div>
+        <h3>Exercise AUSTRAHIND 2026 begins in Kerala</h3>
+        <div class="ca-meta">PIB · Ministry of Defence</div>
+      </article>
+      <article class="ca-card">
+        <div class="ca-eyebrow">GS2 · Social Justice – Financial inclusion</div>
+        <h3>Nationwide saturation drive for financial inclusion schemes</h3>
+        <div class="ca-meta">PIB · Ministry of Finance</div>
+      </article>
     </div>
   </div>
 </section>
@@ -977,6 +1040,65 @@
     scrollTrigger: { trigger: 'footer', start: 'top bottom', end: 'bottom bottom', scrub: true } });
 
   addEventListener('load', () => ScrollTrigger.refresh());
+})();
+</script>
+<script>
+// Current affairs: swap the sample cards for the latest stories when the API answers.
+// The static cards stay if it is slow or down.
+(function () {
+  var feed = document.getElementById('caFeed');
+  if (!feed || !window.fetch) return;
+  var ctrl = window.AbortController ? new AbortController() : null;
+  var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 6000);
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text) n.textContent = text;
+    return n;
+  }
+  // Grouped by India's clock, as in the app
+  function day(iso) {
+    var ist = function (t) { return new Date(t + 5.5 * 3600 * 1000).toISOString().slice(0, 10); };
+    var k = ist(new Date(iso).getTime());
+    if (k === ist(Date.now())) return 'Today';
+    if (k === ist(Date.now() - 86400000)) return 'Yesterday';
+    return new Date(k + 'T00:00:00Z').toLocaleDateString('en-IN', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+  }
+
+  fetch('https://gurukul-ai-backend.onrender.com/current-affairs?limit=3', ctrl ? { signal: ctrl.signal } : {})
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (json) {
+      clearTimeout(timer);
+      var items = json && json.data && json.data.items;
+      if (!items || !items.length) return;
+      feed.textContent = '';
+      items.forEach(function (it, i) {
+        var card = el('article', 'ca-card' + (i === 0 ? ' lead' : ''));
+        card.appendChild(el('div', 'ca-eyebrow', [it.gsPaper, it.topic].filter(Boolean).join(' · ')));
+        card.appendChild(el('h3', null, it.headline));
+        if (i === 0) {
+          card.appendChild(el('p', 'ca-sum', it.summary));
+          // Only a short, single-line question fits the preview; statement-based ones are skipped
+          var q = (it.mcqs || []).filter(function (m) { return m.question.length < 140 && m.question.indexOf('\n') < 0; })[0];
+          if (q) {
+            card.appendChild(el('p', 'ca-q', q.question));
+            var box = el('div', 'mcq');
+            box.setAttribute('aria-hidden', 'true');
+            q.options.forEach(function (o, oi) {
+              var row = el('div', oi === q.answerIndex ? 'right' : null, o);
+              if (oi === q.answerIndex) row.appendChild(el('i')).setAttribute('data-lucide', 'check');
+              box.appendChild(row);
+            });
+            card.appendChild(box);
+          }
+        }
+        card.appendChild(el('div', 'ca-meta', [it.source, it.ministry, day(it.publishedAt)].filter(Boolean).join(' · ')));
+        feed.appendChild(card);
+      });
+      if (window.lucide) lucide.createIcons();
+    })
+    .catch(function () { clearTimeout(timer); });
 })();
 </script>
 </body>
