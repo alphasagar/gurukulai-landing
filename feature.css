@@ -1,0 +1,35 @@
+/* Feature pages (Ask Guru, evaluation, PYQs, NCERT). Shared chrome lives in site.css. */
+.feature-main{padding:8px 0 24px}
+.feature-main section{margin-bottom:clamp(56px,8vw,88px)}
+.feature-main h2{font-size:clamp(1.7rem,3.6vw,2.5rem);letter-spacing:-.03em;margin-bottom:12px}
+.feature-main .sub{color:var(--muted);max-width:64ch;margin-bottom:28px}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;list-style:none;counter-reset:step}
+.steps li{counter-increment:step;padding:26px;border-radius:var(--r-lg);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+.steps li::before{content:counter(step);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;margin-bottom:16px;font:700 15px var(--display);background:var(--lamp);color:#1A1205}
+.steps h3{font-size:1.15rem}
+.steps p{color:var(--muted);font-size:15px;margin-top:8px}
+
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.point{display:flex;gap:16px;padding:24px;border-radius:var(--r-lg);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+.point-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;background:rgba(255,181,71,.12);color:var(--lamp)}
+.point-icon svg.lucide{width:22px;height:22px}
+.point h3{font-size:1.1rem}
+.point p{color:var(--muted);font-size:15px;margin-top:6px}
+
+.faq-list{display:grid;gap:10px}
+.faq-list details{border-radius:var(--r-md);background:var(--ink-2);box-shadow:inset 0 0 0 1px var(--line)}
+.faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;padding:20px 22px;font:600 1.05rem var(--display)}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:'+';color:var(--lamp);font-size:1.4rem;line-height:1}
+.faq-list details[open] summary::after{content:'–'}
+.faq-list details p{padding:0 22px 22px;color:var(--muted);max-width:70ch}
+
+.related{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.related a{display:flex;align-items:center;gap:12px;padding:18px 20px;border-radius:var(--r-md);text-decoration:none;background:rgba(255,255,255,.03);box-shadow:inset 0 0 0 1px var(--line);font-weight:600;transition:box-shadow .2s,background .2s}
+.related a:hover{box-shadow:inset 0 0 0 1px var(--lamp);background:rgba(255,181,71,.05)}
+.related svg.lucide{color:var(--lamp);width:20px;height:20px}
+
+@media (max-width:760px){
+  .steps,.points{grid-template-columns:1fr}
+}
